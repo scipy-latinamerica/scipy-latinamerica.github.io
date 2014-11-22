@@ -3,11 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Bienvenido a SciPy Latin America
---------------------------------
 
-Nuestro objetivo es nuclear a los usuarios de Python_ en el ámbito científico,
-de manera de centralizar la comunicación a nivel regional.
+|SCIPY_LA|
+==========
+
+.. image:: _static/scipy.png
+    :align: center
+    :scale: 100 %
+
+
+Nucleamos a los usuarios de Python_ en el ámbito científico, para centralizar
+la comunicación a nivel regional.
 
 Pretendemos llegar a usuarios, académicos y empresas, promover el uso de Python,
 intercambiar información, compartir experiencias y en general, ser el marco de

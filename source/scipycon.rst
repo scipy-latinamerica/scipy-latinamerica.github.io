@@ -1,38 +1,12 @@
-===================
-SciPyLa Conferences
-===================
+===========
+Conferences
+===========
 
+Conferencias
+------------
 
-.. raw:: html
+- `SciPy Latin América 2015 - Posasas, Misiones, Argentina <http://2015.scipyla.org>`_
+- `SciPyCon Argentina 2014 - Bahía Blanca, Buenos Aires, Argentina <http://2014.scipyla.org>`_
+- `SciPyCon Argentina 2013 - Puerto Madryn, Chubut, Argentina <http://2013.scipyla.org>`_
 
-    <script>
-        var IFRAME_URL = "http://scipycon.com.ar/";
-        var REMOVE_H1 = true;
-    </script>
-
-    <a id="remove-frame" class="btn pull-right btn-mini"/>Quitar Marco</a>
-    <iframe id="embed"
-        style="overflow-y: scroll;"
-        src=""
-        scrolling="no"
-        frameborder="0"
-        width="100%"
-        height="700">
-    </iframe>
-
-    <script>
-        $(document).ready(function(){
-
-            if(REMOVE_H1){
-                $("h1").hide();
-            };
-
-            $("#embed").attr('src', IFRAME_URL);
-
-            $("#remove-frame").click(function(evt){
-                window.location.replace(IFRAME_URL);
-            });
-
-        });
-    </script>
 
