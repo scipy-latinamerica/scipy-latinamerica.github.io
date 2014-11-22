@@ -1,0 +1,38 @@
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+
+{# Custom CSS/JS #}
+{% set bootswatch_css_custom = ['_static/scipyla.css'] %}
+{% set script_files = script_files + ["_static/scipyla.js"] %}
+
+
+{% block sidebartoc %}
+
+{% endblock %}
+
+
+{%- block content %}
+{{ navBar() }}
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      {% block body %}{% endblock %}
+    </div>
+    <div class="col-md-2">
+        {% include "twitter.html" %}
+    </div>
+
+  </div>
+</div>
+{%- endblock %}
+
+
+{# silence prev and next topic #}
+{% block sidebarrel %}
+{% endblock %}
+
+{# silence search #}
+{% block sidebarsearch %}
+{% endblock %}
+
+
