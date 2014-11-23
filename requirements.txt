@@ -1,8 +1,4 @@
-Jinja2==2.7.3
-MarkupSafe==0.23
-Pygments==2.0.1
 Sphinx==1.2.3
-argparse==1.2.1
-docutils==0.12
 sphinx-bootstrap-theme==0.4.3
-wsgiref==0.1.2
+sphinx-intl==0.9.5
+
