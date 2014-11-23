@@ -33,7 +33,7 @@ Para conocer las herramientas y bibliotecas de uso científico desarrolladas
 por la comunidad mundial, intercambiar experiencias y conocer las ventajas del
 lenguaje Python en la comunidad científica argentina, concretar encuentros,
 foros de discusión y proyectos educativos y de investigación y desarrollo
-científico relacionados con Python_.
+científico relacionados con `Python <|PYTHON|>`_.
 
 
 ¿Por donde empezar?
