@@ -54,6 +54,5 @@ Depende...
     :hidden:
     :maxdepth: 1
 
-    forum.rst
     scipycon.rst
 
