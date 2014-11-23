@@ -1,5 +1,32 @@
 <h3>Noticias</h3>
 
-<a class="twitter-timeline"  href="https://twitter.com/SciPyAr/scipyar"  data-widget-id="373257193975316480">Tweets de @SciPyAr/scipyar</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+<div id="rss-default" class="list-group news" ></div>
+
+
+<script>
+
+$(document).ready(function(){
+
+    var load_feeds = 0;
+
+    var sort_feeds = function(){
+        load_feeds++;
+        if(load_feeds == {{rss|length}}){
+            var $items = $("#rss-default .list-group-item");
+            $("#rss-default > ul").remove();
+            $("#rss-default").append(
+                $items.tsort({data:'date', order: 'desc'}).slice(0, {{total_news}})
+            );
+        }
+    }
+    {% for feed in rss %}
+        $("#rss-default").rss(
+            "{{feed}}", {
+            entryTemplate: '<div data-date="{date}" class="list-group-item">{title} <a target="_blank" href="{url}">View on Twitter</a> <p><small>{date}</small></p></div>',
+            success: sort_feeds
+        }).show();
+    {% endfor %}
+});
+
+</script>

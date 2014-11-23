@@ -18,7 +18,7 @@ import sys, os
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('.'))
-import subs
+import data
 
 # -- General configuration -----------------------------------------------------
 
@@ -44,7 +44,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = subs.SUBSTITUTIONS["SCIPY_LA"]
+project = data.SUBSTITUTIONS["SCIPY_LA"]
 copyright = u'2014, {}'.format(project)
 
 # The version info for the project you're documenting, acts as replacement for
@@ -112,7 +112,7 @@ html_theme_options = {
     'navbar_pagenav': False,
 
     'navbar_links': [
-        ("Forum", subs.SUBSTITUTIONS["SCIPYLA_FORUM"], True)
+        ("Forum", data.SUBSTITUTIONS["SCIPYLA_FORUM"], True)
     ],
 
 }
@@ -135,7 +135,7 @@ html_logo = "_static/scipy2424.png"
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = "_static/favicon.ico"
+html_favicon = "_static/favicon.ico?v=2"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -261,9 +261,36 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
+#==============================================================================
+# TEMPLATE ENGINE VARS
+#==============================================================================
+
+TWEET_TO_RSS_TEMPLATE = (
+    "http://twitrss.me/twitter_user_to_rss/?user={}&replies=on"
+)
+
+rss = [feed.strip() for feed in data.RSS if feed.strip()]
+for user in data.TWITTER:
+    if user.count("@") != 1:
+        raise ValueError("{} can't be twitter user".format(user.strip()))
+    user = user.strip().replace("@", "")
+    if user:
+        trss = TWEET_TO_RSS_TEMPLATE.format(user)
+        rss.append(trss)
+
+html_context = {
+    "total_news": data.TOTAL_NEWS,
+    "rss": rss,
+    "substitutions": data.SUBSTITUTIONS
+}
+
+
+#==============================================================================
+# RSS SUBSTITUTIONS
+#==============================================================================
 
 epilog_lines = []
-for k, v in subs.SUBSTITUTIONS.items():
+for k, v in data.SUBSTITUTIONS.items():
     line = ".. |{}| replace:: {}".format(k, v)
     epilog_lines.append(line)
 
