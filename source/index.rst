@@ -12,8 +12,8 @@
     :scale: 100 %
 
 
-Nucleamos a los usuarios de Python_ en el ámbito científico, para centralizar
-la comunicación a nivel regional.
+Nucleamos a los usuarios de **Python** en el ámbito científico, para
+centralizar la comunicación a nivel regional.
 
 Pretendemos llegar a usuarios, académicos y empresas, promover el uso de Python,
 intercambiar información, compartir experiencias y en general, ser el marco de
@@ -33,7 +33,7 @@ Para conocer las herramientas y bibliotecas de uso científico desarrolladas
 por la comunidad mundial, intercambiar experiencias y conocer las ventajas del
 lenguaje Python en la comunidad científica argentina, concretar encuentros,
 foros de discusión y proyectos educativos y de investigación y desarrollo
-científico relacionados con `Python <|PYTHON|>`_.
+científico relacionados con **Python**.
 
 
 ¿Por donde empezar?
@@ -42,13 +42,12 @@ científico relacionados con `Python <|PYTHON|>`_.
 Depende...
 
 - **Si no sabes Python (y quieres aprender):**
-  `Esta pagina de Python.org <https://docs.python.org>`_
-  tiene una recopilación de links y material que los miembros de PyAr
-  consideran útil para aquellos que se inician en este lenguaje.
+  Esta pagina de Python.org |PYTHON_DOCS| tiene una recopilación de links y
+  material útil para aquellos que se inician en este lenguaje.
 
 - **Si sabes Python y quieres dedicarte a la ciencia con el lenguaje:** Podes unirte
-  a nuestra :ref:`lista de correo<forum>`, dirigirte a la pagina de
-  `SciPy.org <http://scipy.org/>`_
+  a nuestra foro (|SCIPYLA_FORUM|), dirigirte a la pagina de
+  SciPy.org (|SCIPY|)
 
 
 Contenido:
@@ -57,7 +56,3 @@ Contenido:
     :maxdepth: 1
 
     scipycon.rst
-
-
-.. _Python:
-.. _Forum:
