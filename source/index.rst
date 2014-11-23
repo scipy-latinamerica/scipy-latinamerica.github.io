@@ -1,11 +1,11 @@
-.. SciPy Argentina documentation master file, created by
+.. SciPy Latin America documentation master file, created by
    sphinx-quickstart on Wed Aug 28 21:56:12 2013.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 
-|SCIPY_LA|
-==========
+Inicio
+======
 
 .. image:: _static/scipy.png
     :align: center
@@ -54,4 +54,7 @@ Depende...
     :hidden:
     :maxdepth: 1
 
+    index.rst
+    forum.rst
     scipycon.rst
+

@@ -12,7 +12,7 @@
 # serve to show the default.
 
 import sphinx_bootstrap_theme
-import sys, os
+import sys, os, urllib
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -111,9 +111,7 @@ html_theme_options = {
     'navbar_sidebarrel': False,
     'navbar_pagenav': False,
 
-    'navbar_links': [
-        ("Forum", data.SUBSTITUTIONS["SCIPYLA_FORUM"], True)
-    ],
+    'navbar_links': [],
 
 }
 
@@ -261,29 +259,61 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
+#==============================================================================
+# REMOVE SIMBOLS ON LINKS
+#==============================================================================
+
 html_add_permalinks = False
+
+
+#==============================================================================
+# INTERNACIONALIZATION
+#==============================================================================
+
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False
+
 
 #==============================================================================
 # TEMPLATE ENGINE VARS
 #==============================================================================
 
+# RSSs
+rss = [(data.NEWS_FOR_FEED, feed.strip()) for feed in data.RSS if feed.strip()]
+
+# Twitter
 TWEET_TO_RSS_TEMPLATE = (
     "http://twitrss.me/twitter_user_to_rss/?user={}&replies=on"
 )
-
-rss = [feed.strip() for feed in data.RSS if feed.strip()]
 for user in data.TWITTER:
     if user.count("@") != 1:
         raise ValueError("{} can't be twitter user".format(user.strip()))
     user = user.strip().replace("@", "")
     if user:
-        trss = TWEET_TO_RSS_TEMPLATE.format(user)
+        trss = (data.NEWS_FOR_FEED, TWEET_TO_RSS_TEMPLATE.format(user))
         rss.append(trss)
 
+
+# GOOGLE NEWS
+GOOGLE_NEWS_TEMPLATE = (
+    "https://news.google.de/news/feeds?q={}&output=rss"
+)
+terms = []
+for term in data.GOOGLE_NEWS_SEARCH_TERMS:
+    term = term.strip()
+    if term:
+        terms.append(urllib.quote_plus(term.encode("utf8")))
+rss.append((
+    data.NEWS_FOR_FEED * len(terms),
+    GOOGLE_NEWS_TEMPLATE.format("+".join(terms))
+))
+
+
+# CONTEXT
 html_context = {
-    "total_news": data.TOTAL_NEWS,
+    "TOTAL_NEWS": data.TOTAL_NEWS,
+    "SUBSTITUTIONS": data.SUBSTITUTIONS,
     "rss": rss,
-    "substitutions": data.SUBSTITUTIONS
 }
 
 

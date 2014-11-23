@@ -1,24 +1,35 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals
 
+
+# resStructuredtext substitusions (also available on templates)
 SUBSTITUTIONS = {
 
     # python
-    "PYTHON": u'http://python.org/',
+    "PYTHON": 'http://python.org/',
     "PYTHON_DOCS": u'https://docs.python.org',
 
     # scipy
-    "SCIPY": u'http://scipy.org',
+    "SCIPY": 'http://scipy.org',
 
     # scipy la
-    "SCIPY_LA": u'SciPy Latin America',
-    "SCIPYLA_FORUM": u'https://groups.google.com/forum/#!forum/scipyla',
+    "SCIPY_LA": 'SciPy Latin America',
+    "SCIPYLA_FORUM": 'https://groups.google.com/forum/#!forum/scipyla',
 
 }
 
+
+# How Many news must show on sidebar
 TOTAL_NEWS = 30
 
+
+# How many news from avery author will be retrieved to create the news sidebar
+NEWS_FOR_FEED = 4
+
+
+# Twitter acoounts for generate the RSS feed for the sidebar
 TWITTER = (
     # Generic Python
      "@ThePSF", "@gvanrossum", "@planetpython",
@@ -49,6 +60,10 @@ TWITTER = (
 
 )
 
+GOOGLE_NEWS_SEARCH_TERMS = (
+    "scipy", "pydata", "science"
+)
 
+# Another rss
 RSS = (
 )
