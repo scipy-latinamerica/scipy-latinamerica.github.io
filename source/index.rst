@@ -50,9 +50,8 @@ Depende...
   SciPy.org (|SCIPY|)
 
 
-Contenido:
-
 .. toctree::
+    :hidden:
     :maxdepth: 1
 
     scipycon.rst
