@@ -16,6 +16,8 @@ endif
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
+SPHINXOPTS_ES   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) -Dlanguage='es' source
+SPHINXOPTS_PT   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) -Dlanguage='pt' source
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
@@ -24,6 +26,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
+	@echo "  website    to make website"
 	@echo "  serve      to make serve html and view on default browser"
 	@echo "  view       to make html and view on default browser if is already serving"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
@@ -55,6 +58,13 @@ html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+website:
+	$(SPHINXBUILD) -b html $(SPHINXOPTS_ES) $(BUILDDIR)/html/es
+	$(SPHINXBUILD) -b html $(SPHINXOPTS_PT) $(BUILDDIR)/html/pt
+	cp source/index.html $(BUILDDIR)/html
+	@echo
+	@echo "Build finished. The website is in $(BUILDDIR)/html."
 
 serve:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html

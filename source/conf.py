@@ -112,7 +112,8 @@ html_theme_options = {
     'navbar_sidebarrel': False,
     'navbar_pagenav': False,
 
-    'navbar_links': [],
+    'navbar_links': [("es", "../es/", True),
+	             ("pt", "../pt/", True)],
 
 }
 
