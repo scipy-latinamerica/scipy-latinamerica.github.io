@@ -4,19 +4,19 @@ $(document).ready(function(){
 
     var parseMonth = function(month){
         switch(month){
-            case "Jun": return 1;
-            case "Feb": return 2;
-            case "Mar": return 3;
-            case "Apr": return 4;
-            case "May": return 5;
-            case "Jun": return 6;
-            case "Jul": return 7;
-            case "Aug": return 8;
-            case "Sep": return 9;
-            case "Oct": return 10;
-            case "Nov": return 11;
-            case "Dec": return 12;
-            default: return 13;
+            case "Jun": return 0;
+            case "Feb": return 1;
+            case "Mar": return 2;
+            case "Apr": return 3;
+            case "May": return 4;
+            case "Jun": return 5;
+            case "Jul": return 6;
+            case "Aug": return 7;
+            case "Sep": return 8;
+            case "Oct": return 9;
+            case "Nov": return 10;
+            case "Dec": return 11;
+            default: return -1000;
         }
     }
 
@@ -25,23 +25,32 @@ $(document).ready(function(){
         if(load_feeds == rss.length){
             var $items = $("#news .list-group-item");
 
-            $items.each(function(idx, elem){
-                var $elem = $(elem);
-                var dateParts = $elem.data("date").split(" ");
-                var timeParts = dateParts[4].split(":");
-                var date = new Date(
-                    parseInt(dateParts[3]), parseMonth(dateParts[2]), parseInt(dateParts[1]),
-                    parseInt(timeParts[0]), parseInt(timeParts[1]), parseInt(timeParts[2])
-                );
-                $elem.attr("data-time", date.getTime());
-            });
+            $items.tsort({
+                data:'date',
+                order: 'desc',
+                sortFunction: function(a, b){
+                    var dateParts = a.s[0].split(" ");
+                    var timeParts = dateParts[4].split(":");
+                    var dateA = new Date(
+                        parseInt(dateParts[3]), parseMonth(dateParts[2]), parseInt(dateParts[1]),
+                        parseInt(timeParts[0]), parseInt(timeParts[1]), parseInt(timeParts[2])
+                    );
 
+                    var dateParts = b.s[0].split(" ");
+                    var timeParts = dateParts[4].split(":");
+                    var dateB = new Date(
+                        parseInt(dateParts[3]), parseMonth(dateParts[2]), parseInt(dateParts[1]),
+                        parseInt(timeParts[0]), parseInt(timeParts[1]), parseInt(timeParts[2])
+                    );
+                    if(dateA < dateB)
+                        return 1
+                    else if(dateA > dateB)
+                        return -1
+                    return 0
+                }
+            }).slice(0, TOTAL_NEWS);
             $("#news > ul").remove();
-            $("#news").append(
-                $items.tsort(
-                    {data:'time', order: 'desc'}
-                ).slice(0, TOTAL_NEWS)
-            );
+            $("#news").append($items);
             $("#news_loading").remove();
             $("#news").removeClass("hidden");
         }
