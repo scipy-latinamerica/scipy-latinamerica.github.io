@@ -1,0 +1,106 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: SciPy Latin America\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-24 16:38 UTC\n"
+"PO-Revision-Date: 2014-11-24 16:48 UTC\n"
+"Last-Translator: Filipe Saraiva <mail@filipesaraiva.info>\n"
+"Language-Team: PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/index.rst:8
+msgid "Inicio"
+msgstr "Início"
+
+#: ../../source/index.rst:15
+msgid ""
+"Nucleamos a los usuarios de **Python** en el ámbito científico, para "
+"centralizar la comunicación a nivel regional."
+msgstr ""
+"Agrupamos os usuários de **Python** no âmbito científico, para "
+"centralizar a comunicação a nível regional."
+
+#: ../../source/index.rst:18
+msgid ""
+"Pretendemos llegar a usuarios, académicos y empresas, promover el uso de "
+"Python, intercambiar información, compartir experiencias y en general, ser "
+"el marco de referencia local en el uso y difusión de esta tecnología en la "
+"ciencia."
+msgstr ""
+"Pretendemos chegar aos usuários, acadêmicos e empresas, afim de promover o uso de "
+"Python, trocar informações, compartilhar experiências em geral, e ser "
+"uma referência local no uso e difusão desta tecnologia na "
+"ciência."
+
+#: ../../source/index.rst:22
+msgid "Nuestros objetivos son simples:"
+msgstr "Nossos objetivos são simples:"
+
+#: ../../source/index.rst:24
+msgid "Fomentar la ciencia."
+msgstr "Fomentar a ciência."
+
+#: ../../source/index.rst:25
+msgid ""
+"Fomentar la adopción de la informática como herramienta de estudio "
+"científico."
+msgstr ""
+"Fomentar a adoção da computação como ferramenta para o estudo "
+"científico."
+
+#: ../../source/index.rst:26
+msgid ""
+"Fomentar el uso de Python como principal herramienta informática en la "
+"ciencia."
+msgstr ""
+"Fomentar o uso de Python como principal ferramenta computacional na "
+"ciência."
+
+#: ../../source/index.rst:30
+msgid "¿Por que participar?"
+msgstr "Por que participar?"
+
+#: ../../source/index.rst:32
+msgid ""
+"Para conocer las herramientas y bibliotecas de uso científico desarrolladas "
+"por la comunidad mundial, intercambiar experiencias y conocer las ventajas "
+"del lenguaje Python en la comunidad científica argentina, concretar "
+"encuentros, foros de discusión y proyectos educativos y de investigación y "
+"desarrollo científico relacionados con **Python**."
+msgstr ""
+"Para conhecer as ferramentas e bibliotecas de uso científico desenvolvidas "
+"pela comunidade em todo mundo, trocar experiências, conhecer as vantagens "
+"da linguagem Python para a comunidade científica, realizar "
+"encontros, fóruns de discussões, e projetos educacionais e de pesquisa "
+" para o desenvolvimento científico relacionados com **Python**."
+
+#: ../../source/index.rst:40
+msgid "¿Por donde empezar?"
+msgstr "Por onde começar?"
+
+#: ../../source/index.rst:42
+msgid "Depende..."
+msgstr "Depende..."
+
+#: ../../source/index.rst:44
+msgid ""
+"**Si no sabes Python (y quieres aprender):** Esta pagina de Python.org "
+"|PYTHON_DOCS| tiene una recopilación de links y material útil para aquellos "
+"que se inician en este lenguaje."
+msgstr ""
+"**Se não conhece Python (mas quer aprender):** Esta página no Python.org "
+"|PYTHON_DOCS| tem uma compilação de links e materiais úteis para aqueles "
+"que querem iniciar nesta linguagem."
+
+#: ../../source/index.rst:48
+msgid ""
+"**Si sabes Python y quieres dedicarte a la ciencia con el lenguaje:** Podes "
+"unirte a nuestra foro (|SCIPYLA_FORUM|), dirigirte a la pagina de SciPy.org "
+"(|SCIPY|)"
+msgstr ""
+"**Se conhece Python e quer se dedicar à aplicações científicas nessa linguagem:** Pode "
+"unir-se ao nosso fórum (|SCIPYLA_FORUM|), e visitar a página SciPy.org "
+"(|SCIPY|)"

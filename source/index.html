@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>SciPy Latin America</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="shortcut icon" href="es/_static/favicon.ico"/>
+    </head>
+
+    <script>
+        if(navigator.browserLanguage) {  
+            var language = navigator.browserLanguage;    
+        } else if(navigator.language) {
+            var language = navigator.language;
+        }
+        
+        switch (language.substring(0,2))  {
+        
+            case "es" : location.href="es/";
+                break;
+                
+            case "pt" : location.href="pt/";
+                break;
+                
+            default : location.href="es/";
+        }
+    </script>
+</html>
