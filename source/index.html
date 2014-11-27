@@ -7,21 +7,17 @@
     </head>
 
     <script>
-        if(navigator.browserLanguage) {  
-            var language = navigator.browserLanguage;    
+        if(navigator.browserLanguage) {
+            var language = navigator.browserLanguage;
         } else if(navigator.language) {
             var language = navigator.language;
         }
-        
         switch (language.substring(0,2))  {
-        
-            case "es" : location.href="es/";
+            case "es" : location.href="es/index.html";
                 break;
-                
-            case "pt" : location.href="pt/";
+            case "pt" : location.href="pt/index.html";
                 break;
-                
-            default : location.href="es/";
+            default : location.href="es/index.html";
         }
     </script>
 </html>

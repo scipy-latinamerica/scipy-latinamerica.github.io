@@ -55,39 +55,14 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
-
-website:
 	$(SPHINXBUILD) -b html $(SPHINXOPTS_ES) $(BUILDDIR)/html/es
 	$(SPHINXBUILD) -b html $(SPHINXOPTS_PT) $(BUILDDIR)/html/pt
 	cp source/index.html $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The website is in $(BUILDDIR)/html."
 
-serve:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
-	cd $(BUILDDIR)/html; python -m SimpleHTTPServer &
-	python -c "import webbrowser;webbrowser.open('http://localhost:8000/index.html')"
-
 view:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 	python -c "import webbrowser;webbrowser.open('build/html/index.html')"
-
-dirhtml:
-	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
-	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/dirhtml."
-
-singlehtml:
-	$(SPHINXBUILD) -b singlehtml $(ALLSPHINXOPTS) $(BUILDDIR)/singlehtml
-	@echo
-	@echo "Build finished. The HTML page is in $(BUILDDIR)/singlehtml."
 
 pickle:
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) $(BUILDDIR)/pickle
