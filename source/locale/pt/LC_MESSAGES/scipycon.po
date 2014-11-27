@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: SciPy Latin America\n"
@@ -17,7 +17,7 @@ msgstr "Conferências"
 
 #: ../../source/scipycon.rst:8
 msgid ""
-"`SciPy Latin America 2015 - Posasas, Misiones, Argentina "
+"`SciPy Latin America 2015 - Posadas, Misiones, Argentina "
 "<http://2015.scipyla.org>`_"
 msgstr ""
 
