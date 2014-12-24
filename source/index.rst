@@ -26,7 +26,7 @@ Nuestros objetivos son simples:
 #. Fomentar el uso de Python como principal herramienta informática en la ciencia.
 
 
-¿Por que participar?
+¿Por qué participar?
 ^^^^^^^^^^^^^^^^^^^^
 
 Para conocer las herramientas y bibliotecas de uso científico desarrolladas
@@ -36,17 +36,17 @@ foros de discusión y proyectos educativos y de investigación y desarrollo
 científico relacionados con **Python**.
 
 
-¿Por donde empezar?
+¿Por dónde empezar?
 ^^^^^^^^^^^^^^^^^^^
 
 Depende...
 
 - **Si no sabes Python (y quieres aprender):**
-  Esta pagina de Python.org |PYTHON_DOCS| tiene una recopilación de links y
+  Esta página de Python.org |PYTHON_DOCS| tiene una recopilación de links y
   material útil para aquellos que se inician en este lenguaje.
 
-- **Si sabes Python y quieres dedicarte a la ciencia con el lenguaje:** Podes unirte
-  a nuestra foro (|SCIPYLA_FORUM|), dirigirte a la pagina de
+- **Si sabes Python y quieres dedicarte a la ciencia con el lenguaje:** Podés unirte
+  a nuestra foro (|SCIPYLA_FORUM|), dirigirte a la página de
   SciPy.org (|SCIPY|)
 
 
