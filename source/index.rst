@@ -50,6 +50,11 @@ Depende...
   SciPy.org (|SCIPY|)
 
 
+**Recursos Gráficos**
+
+Si desea utilizar la gráfica de SciPy Latin America recomendamos descargar
+este archivo: :download:`scipyla_graphics.zip <_static/scipyla_graphics.zip>`.
+
 .. toctree::
     :hidden:
     :maxdepth: 1

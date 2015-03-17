@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: SciPy Latin America\n"
@@ -104,3 +104,10 @@ msgstr ""
 "**Se conhece Python e quer se dedicar à aplicações científicas nessa linguagem:** Pode "
 "unir-se ao nosso fórum (|SCIPYLA_FORUM|), e visitar a página SciPy.org "
 "(|SCIPY|)"
+
+msgid ""
+"Si desea utilizar la gráfica de SciPy Latin America recomendamos descargar"
+"este archivo: :download:`scipyla_graphics.zip <_static/scipyla_graphics.zip>`."
+msgstr ""
+"test"
+
