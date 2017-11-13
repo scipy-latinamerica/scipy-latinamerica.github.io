@@ -330,4 +330,9 @@ for k, v in data.SUBSTITUTIONS.items():
     line = ".. |{}| replace:: {}".format(k, v)
     epilog_lines.append(line)
 
+for k in data.ROLES:
+    line = ".. role:: {}".format(k)
+    epilog_lines.append(line)
+
+
 rst_epilog = "\n".join(epilog_lines)

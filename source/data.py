@@ -20,6 +20,9 @@ SUBSTITUTIONS = {
 
 }
 
+ROLES = [
+    "overline"]
+
 
 # How Many news must show on sidebar
 TOTAL_NEWS = 30
