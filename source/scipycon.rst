@@ -5,7 +5,7 @@ Conferencias
 Conferencias
 ------------
 
-- `SciPy Latin America 2018 - Colombia <http://scipyla.org/conf/2019/>`_
+- `SciPy Latin America 2019 - Colombia <http://scipyla.org/conf/2019/>`_
 - `SciPy Latin America 2018 - Curitiba, Brazil <http://scipyla.org/conf/2018/>`_
 - `SciPy Latin America 2017 - Habana, Cuba <http://scipyla.org/conf/2017/>`_ **CANCELED**
 - `SciPy Latin America 2016 - Florianópolis, SC, Brasil <http://scipyla.org/conf/2016/>`_
