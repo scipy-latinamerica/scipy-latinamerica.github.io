@@ -1,8 +1,0 @@
-{# the method toctree returns an ul element as string with the for omit the opening an close of ul #}
-
-{% for li in toctree(maxdepth=theme_globaltoc_depth|toint, collapse=False, includehidden=theme_globaltoc_includehidden|tobool).splitlines() %}
-    {% if not loop.first and not loop.last %}
-        {{li}}
-    {% endif %}
-{% endfor %}
-
