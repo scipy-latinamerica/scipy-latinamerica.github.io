@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="http://conf.scipyla.org/"/>
+
+    <meta name="description" content="SciPyLA 2018 - A conferência de Python científico na América Latina">
+    <meta name="author" content="A comunidade SciPyLA">
+
+
+    <title>SciPyLA 2018</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- SciPyLA Bootstrap theme -->
+    <link href="./assets/css/theme.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Icons -->
+    <link href="./assets/css/fonts.css" rel="stylesheet">
+    <link href="./assets/css/Roboto+Condensed+Yanone+Kaffeesatz.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="./assets/vendors/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./assets/vendors/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="./assets/vendors/html5shiv.min.js"></script>
+    <script src="./assets/vendors/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+    <script language="javascript">
+        window.route = {section: 'home', page: 'index'}
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-80867706-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body class="main" ng-app="scipyla" ng-controller="MainCtl">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse text-uppercase" >
+    <div ng-include="navTemplate.url"></div>
+</nav>
+
+<header class="main">
+    <div id="home-carousel" class="carousel slide bg-dark" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#home-carousel" data-slide-to="1"></li>
+            <li data-target="#home-carousel" data-slide-to="2"></li>
+            <li data-target="#home-carousel" data-slide-to="3"></li>
+            <li data-target="#home-carousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            
+            <div class="item active text-center" data-bg="slide-1">
+                <div class="carousel-item__container carousel-item__container--slide-1 vertical-center">
+                    <div class="self-vertical-center">
+
+                        <img src="./assets/img/scipyla.h.svg" width="395"
+                             class="hidden-xs center-block img-responsive"/>
+                        <img src="./assets/img/scipyla.v.svg" width="138"
+                             class="visible-xs center-block img-responsive"/>
+                        <p class="lead" ng-bind="carousel[0].lead[0]"></p>
+                        <p>
+                          <a ng-repeat="btn in carousel[0].btn" href="{{btn.href}}" class="btn btn-warning" ng-bind="btn.caption"></a>
+                        </p>
+                        <p class="lead">
+                            <span ng-bind="carousel[0].lead[1]"></span> <br class="visible-xs"><span ng-bind="carousel[0].lead[2]"></span>
+                        </p>
+                        <p class="lead">
+                            <span class="lead"> <span ng-bind="carousel[0].lead[3]"></span> <br class="visible-xs"/>
+                                <span class="hidden-xs">,</span>
+                                <span ng-bind="carousel[0].lead[4]"></span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item text-center" data-bg="slide-2">
+                <div class="carousel-item__container carousel-item__container--slide-2 vertical-center">
+                    <div class="self-vertical-center">
+                        <picture>
+                            <!--
+                            <source srcset="./assets/img/sponsor.levels.es.webp" type="image/webp">
+                            -->
+                            <source srcset="./assets/img/sponsor.levels.pt.png" type="image/png">
+                            <img class="img-responsive center-block" src="./assets/img/sponsor.levels.pt.png" alt="">
+                        </picture>
+                        <p class="lead">
+                            <span class="lead" ng-bind="carousel[1].lead[0]"></span>
+                        </p>
+                        <a href="mailto:sponsor@scipyla.org" class="btn btn-warning" ng-bind="carousel[1].lead[1]"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sponsors -->
+            <div class="item text-center" data-bg="slide-3">
+                <div class="carousel-item__container carousel-item__container--slide-3 vertical-center">
+                    <!-- div class="self-vertical-center">
+                        <picture>
+                            <source srcset="./assets/img/home.latamtech.png" type="image/png">
+                            <img class="img-responsive center-block" src="./assets/img/home.latamtech.png" alt="@TheLatamtech - Gold sponsor of SciPyLA 2018">
+                        </picture>
+                        <p class="lead">
+                          <span class="lead" ng-bind="carousel[2].lead[0]"></span>
+                        </p>
+                        <a href="" class="btn btn-warning" ng-bind="carousel[2].lead[1]"></a>
+                    </div -->
+                </div>
+            </div>
+            
+            <div class="item text-center" data-bg="slide-4">
+                <div class="carousel-item__container carousel-item__container--slide-2 vertical-center">
+                    <div class="self-vertical-center">
+                        <p class="lead">
+                            <span class="lead" ng-bind="carousel[3].lead[0]"></span>
+                        </p>
+                        <picture>
+                            <!--
+                            <source srcset="./assets/img/sponsor.levels.es.webp" type="image/webp">
+                            -->
+                            <source srcset="./assets/img/logo_unicuritiba_branca_horizontal.png" type="image/png">
+                            <img class="img-responsive center-block" src="./assets/img/sponsor.levels.pt.png" alt="">
+                        </picture>
+                        <br>
+                        <a href="http://unicuritiba.edu.br/" class="btn btn-warning" ng-bind="carousel[3].lead[1]" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item text-center" data-bg="slide-5">
+                <div class="carousel-item__container carousel-item__container--slide-2 vertical-center">
+                    <div class="self-vertical-center">
+                        <p class="lead">
+                            <span class="lead" ng-bind="carousel[4].lead[0]"></span>
+                        </p>
+                        <picture>
+                            <!--
+                            <source srcset="./assets/img/sponsor.levels.es.webp" type="image/webp">
+                            -->
+                            <source srcset="./assets/img/apyb-logo.svg" type="image/png">
+                            <img class="img-responsive center-block" src="./assets/img/sponsor.levels.pt.png" alt="">
+                        </picture>
+                        <br>
+                        <a href="http://associacao.python.org.br/" class="btn btn-warning" ng-bind="carousel[4].lead[1]" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- End Sponsors -->
+
+        </div>
+
+    </div>
+
+        <a class="left carousel-control" href="#home-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#home-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Próxima</span>
+        </a>
+    </div>
+</header>
+
+<section>
+    <div id="about" class="container">
+        <div class="row text-center">
+            <h2 ng-bind="scipy_america.title"></h2>
+            <p ng-bind="scipy_america.description"></p>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-xs-12 text-center" id="planets-container">
+                <div id="planets-img">
+                    <picture>
+                        <source srcset="./assets/img/planets-bg.webp" type="image/webp">
+                        <source srcset="./assets/img/planets-bg.png" type="image/png">
+                        <img class="img-responsive center-block" src="./assets/img/planets-bg.png" alt=""></picture>
+                    <div class="row" id="planets">
+                        <strong>
+                            <div class="col-xs-4 text-center">
+                                <img class="img-responsive center-block" src="./assets/img/planet.py.svg"/>
+                                <p ng-bind="scipy_america.headers.python"></p>
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                <img class="img-responsive center-block" src="./assets/img/planet.sci.svg"/>
+                                <p ng-bind="scipy_america.headers.science"></p>
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                <div class="overlay-target-block">
+                                    <img class="img-responsive center-block" src="./assets/img/planet.la.svg"/>
+                                    <img id="planet-la" src="./assets/img/planet.la.svg"/>
+                                </div>
+                                <div id="planets-satellite"></div>
+                                <p ng-bind="scipy_america.headers.latin_america"></p>
+                            </div>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="local">
+    <div class="jumbotron jumbotron-dark" id="venue">
+        <div class="container">
+
+            <h2>Curitiba</h2>
+            <div class="local__text">
+                <p ng-repeat="pr in curitiba.paragraphs" ng-bind="pr"></p>
+            </div>
+            <a class="btn btn-lg btn-warning" href="#" ng-bind="curitiba.info"></a>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <section>
+        <div class="row marketing text-center" id="org">
+            <div class="col-md-4" ng-repeat="mark in marketing">
+                <picture class="img-circle">
+                    <source ng-repeat="src in mark.sources" srcset="{{src.srcset}}" type="{{src.type}}">
+                    <img src="{{mark.img.src}}" class="{{mark.img.class}}">
+                </picture>
+                <h3 ng-bind="mark.title"></h3>
+                <p ng-bind="mark.description"></p>
+                <div class="marketing-action">
+		    <a href="{{mark.href}}" class="btn btn-info center-block" ng-bind="mark.action"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section>
+    <div class="jumbotron jumbotron-blue" id="timeline">
+        <div class="jumbotron-body">
+            <div class="container">
+                <h3 ng-bind="activities.title"></h3>
+                <div class="row">
+                    <div ng-repeat="(idx, cant) in activities.amounts track by $index" class="col-xs-1" ng-class="{ 'col-xs-offset-5': idx == 0, 'col-sm-offset-4' : idx == 0}">
+                        <strong ng-bind="cant + ((idx == activities.amounts.length - 1)?'*':'')"></strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div ng-repeat="(idx, year) in activities.years" class="col-xs-1" ng-class="{ 'col-xs-offset-5': idx == 0, 'col-sm-offset-4': idx == 0 }">
+                        <picture>
+                            <source srcset="./assets/img/bar{{year}}.webp" type="image/webp">
+                            <source srcset="./assets/img/bar{{year}}.png" type="image/png">
+                            <img src="./assets/img/bar{{year}}.webp" class="img-responsive"/>
+                        </picture>
+                    </div>
+                </div>
+                <div class="row">
+                    <div ng-repeat="(idx, year) in activities.years"" class="col-xs-1" ng-class="{ 'col-xs-offset-5': idx == 0, 'col-sm-offset-4': idx == 0 }">
+                        <span class="hidden-xs" ng-bind="year"></span><span class="visible-xs" ng-bind="'\'' + (year % 100)"></span>
+                    </div>
+                </div>
+                <div class="row overlay-target-block">
+                    <div class="overlay col-xs-offset-5 col-sm-offset-4 col-xs-5 timeline-scale">
+                        <hr/>
+                    </div>
+                    <div ng-repeat="(idx, year) in activities.years" class="col-xs-1" ng-class="{ 'col-xs-offset-5': idx == 0, 'col-sm-offset-4': idx == 0 }">
+                        <div class="center-block timeline-bullet">&bull;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" ng-repeat="item in activities.rows">
+                <div class="col-xs-4 col-sm-3 text-right"><span class="{{item.icon}}"></span>{{item.title}}</div>
+                <div class="col-xs-1 col-sm-1"> &rarr;</div>
+                <div class="col-xs-1 col-sm-1" ng-repeat="label in item.labels"><code class="label label-warning label-round" ng-bind="label"></code></div>
+                <div class="col-xs-1 col-sm-2 hidden-xs" ng-bind="item.suffix"></div>
+            </div>
+            <div class="row visible-xs">
+                <div class="col-xs-12">
+                    <p>
+                        <small>
+                            <small>
+                                <small ng-bind="activities.suffix"></small>
+                            </small>
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="section-nospace">
+    <div class="text-center bg-grey">
+        <div class="container">
+            <h3 ng-bind="gallery.title"></h3>
+            <div class="col-md-3 col-sm-6" ng-repeat="item in gallery.items">
+                <a href="#" class="overlay-target hover">
+                    <picture>
+                        <source srcset="./assets/img/scipyla{{item.year}}.webp" type="image/webp">
+                        <source srcset="./assets/img/scipyla{{item.year}}.png" type="image/png">
+                        <img src="./assets/img/scipyla{{item.year}}.webp" class="img-responsive center-block"/>
+                    </picture>
+                    <div class="overlay visible-hover bg-dark img-circle">
+                    </div>
+                </a>
+                <h4 ng-bind="item.year"></h4>
+                <p>{{item.description}}<br/>
+                    {{item.place}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <section>
+        <div class="row text-center" id="traction">
+            <h3 class="text-uppercase" ng-bind="audience.title"></h3>
+            <div ng-repeat="item in audience.items" class="{{item.class}}" ng-bind="item.caption"></div>
+            <!--div class="col-md-4">Estudantes universit&aacute;rios</div>
+            <div class="col-md-4">Candidatos a gradua&ccedil;&atilde;o cient&iacute;fica</div>
+            <div class="visible-md clearfix"></div>
+            <div class="col-md-4 col-md-offset-2">Cientistas de dados</div>
+            <div class="col-md-4">Programadores</div-->
+            <div class="col-md-6 col-md-offset-3">
+                <picture>
+                    <source srcset="./assets/img/audience.webp" type="image/webp">
+                    <source srcset="./assets/img/audience.png" type="image/png">
+                    <img src="./assets/img/audience.webp" class="img-responsive center-block"/>
+                </picture>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- TODO: Translations -->
+<section>
+    <div class="jumbotron" id="analytics">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h3>{{geographicArea.title}}<br/>
+                        <small ng-bind="geographicArea.title"></small>
+                    </h3>
+                    <picture>
+                        <source srcset="./assets/img/geo.webp" type="image/webp">
+                        <source srcset="./assets/img/geo.png" type="image/png">
+                        <img src="./assets/img/geo.webp" class="img-responsive"/>
+                    </picture>
+                    <div class="row legend">
+                        <div ng-repeat="item in geographicArea.legend" class="{{item.class}}">
+                            <span class="{{item.legendClass}}"></span>
+                            <br class="visible-xs"/>
+                            <small>
+                                <small>
+                                    <small ng-bind="item.caption"></small>
+                                </small>
+                            </small>
+                        </div>
+                    </div>
+                    <p>
+                        <small>
+                            <small>
+                                <small ng-bind="geographicArea.description"></small>
+                            </small>
+                        </small>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h3>{{scipy2018.title}}<br/>
+                        <small ng-bind="scipy2018.subtitle"></small>
+                    </h3>
+                    <div class="row" id="fb">
+                        <div class="col-xs-3 col-xs-offset-3 text-right">
+                            <p class="visible-md">&nbsp;</p>
+                            <picture>
+                                <source srcset="./assets/img/reach.webp" type="image/webp">
+                                <source srcset="./assets/img/reach.png" type="image/png">
+                                <img src="./assets/img/reach.webp" class="img-responsive"/>
+                            </picture>
+                        </div>
+                        <div class="col-xs-3 col-md-3 text-center">
+                            <p class="lead"><span class="lead"><span class="lead"><strong ng-bind="scipy2018.reach.cant"></strong></span></span>
+                            </p>
+                            <p>
+                                <button class="btn btn-xs btn-social btn-primary"><span class="badge badge-square"><span
+                                        class="icon-6"></span></span> {{scipy2018.reach.caption}}
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p><strong ng-bind="scipy2018.interested.cant"></strong> {{scipy2018.interested.caption}}</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3 col-xs-offset-2 text-center">
+                            <div class="well well-xs"><strong ng-bind="scipy2018.tweets.cant"></strong></div>
+                            <p>
+                                <button class="btn btn-xs btn-social btn-info"><span class="badge badge-square"><span
+                                        class="icon-7"></span></span> {{scipy2018.tweets.caption}}
+                                </button>
+                            </p>
+                        </div>
+                        <div class="col-xs-3 col-xs-offset-2 text-center">
+                            <div class="well well-xs"><strong ng-bind="scipy2018.visits.cant"></strong></div>
+                            <p>
+                                <button class="btn btn-xs btn-social btn-danger"><span class="badge badge-square"><span
+                                        class="icon-8"></span></span> {{scipy2018.visits.caption}}
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-nospace">
+    <div class="col-xs-12" id="signup">
+        <div class="container">
+            <div class="sbgu"></div>
+            <div class="sbgl"></div>
+            <div class="sbgr"></div>
+            <div class="row" id="contact-div">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">
+                    <div class="row">
+                        <h3 ng-bind="inscription.title"></h3>
+                    </div>
+                    <div class="row">
+                        <a href="register" id="btn-register" class="btn btn-warning btn-lg" ng-bind="inscription.register"></a>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="footer text-center">
+    <div class="container">
+        <div class="btn-group btn-group-lg">
+            <a ng-repeat="item in footer.items" href="{{item.href}}" type="button" class="{{item.class}}">
+                <span class="{{item.icon}}"></span>
+            </a>
+        </div>
+        <p>Copyright {{footer.thisYear}} &copy; <a href="http://scipyla.org" ng-bind="footer.scipyLa"></a></p>
+    </div>
+    <div class="">
+        <picture>
+            <source srcset="./assets/img/jardim_botanico_curitiba-576.webp 576w,
+                    ./assets/img/jardim_botanico_curitiba-768.webp 768w,
+                    ./assets/img/jardim_botanico_curitiba-992.webp 992w,
+                    ./assets/img/jardim_botanico_curitiba-1200.webp 1200w,
+                    ./assets/img/jardim_botanico_curitiba-1600.webp 1600w,
+                    ./assets/img/jardim_botanico_curitiba-2633.webp 2633w"
+                    type="image/webp">
+
+            <source srcset="./assets/img/jardim_botanico_curitiba-576.png 576w,
+                    ./assets/img/jardim_botanico_curitiba-768.png 768w,
+                    ./assets/img/jardim_botanico_curitiba-992.png 992w,
+                    ./assets/img/jardim_botanico_curitiba-1200.png 1200w,
+                    ./assets/img/jardim_botanico_curitiba-1600.png 1600w,
+                    ./assets/img/jardim_botanico_curitiba-2633.png 2633w"
+                    type="image/png">
+
+            <img class="img img-responsive"
+                 srcset="./assets/img/jardim_botanico_curitiba-576.png 576w,
+                    ./assets/img/jardim_botanico_curitiba-768.png 768w,
+                    ./assets/img/jardim_botanico_curitiba-992.png 992w,
+                    ./assets/img/jardim_botanico_curitiba-1200.png 1200w,
+                    ./assets/img/jardim_botanico_curitiba-1600.png 1600w,
+                    ./assets/img/jardim_botanico_curitiba-2633.png 2633w"
+                 src="./assets/img/jardim_botanico_curitiba-576.png"
+                 alt="Jardim Botânico de Curitiba">
+        </picture>
+
+    </div>
+</footer>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./assets/vendors/ie10-viewport-bug-workaround.js"></script>
+<script src="./assets/vendors/jquery.min.js"></script>
+<script src="./assets/vendors/bootstrap.min.js"></script>
+<script src="./assets/vendors/angular.min.js"></script>
+<script src="../assets/vendors/angular-route.min.js"></script>
+<script src="../assets/vendors/angular-sanitize.min.js"></script>
+<script src="./assets/vendors/modernizr-custom.js"></script>
+
+<script src="../assets/vendors/markdown-it.min.js"></script>
+<script src="../assets/vendors/ng-markdownit.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/mainnav.js"></script>
+
+<script language="javascript">
+    var slidebg = 'slide-1';
+    $('#home-carousel').on('slide.bs.carousel', function (e) {
+        var cls = $(e.relatedTarget).data('bg');
+        var elem = $('#jumbo-main');
+        elem.removeClass(slidebg);
+        elem.addClass(cls);
+        slidebg = cls;
+    })
+</script>
+
+<script src="./assets/js/contact-form.js"></script>
+
+</body>
+</html>

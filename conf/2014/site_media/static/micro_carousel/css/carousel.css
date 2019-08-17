@@ -1,0 +1,31 @@
+/**
+ * Microcarousel
+ */
+.micro_carousel .loading  {
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    background-image: url('../img/loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3,
+.carousel-caption h4,
+.carousel-caption h5,
+.carousel-caption h6 {
+    color: #fff;
+}
+
+.carousel .item img {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.carousel .item {
+    min-height: 400px;
+}

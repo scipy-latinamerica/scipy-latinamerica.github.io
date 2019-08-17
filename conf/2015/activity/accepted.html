@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]><html class="ie ie6 ie-lte9 ie-lte8 ie-lte7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7 ie-lte9 ie-lte8 ie-lte7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8 ie-lte9 ie-lte8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="ie9 ie-lte9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+  <!-- Always force latest IE rendering engine
+       (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <![endif]-->
+
+  <title>SciPy Latin America 2015</title>
+
+  <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+  <meta name="application-name" content="2015" />
+
+  <!-- Speaking of Google, don't forget to set your site up:
+       http://google.com/webmasters -->
+  <meta name="google-site-verification" content="" />
+
+  <!--  Mobile Viewport Fix
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+        device-width: Occupy full width of the screen in its current orientation
+        initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+        user-scalable = yes allows the user to zoom in -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="../2015/static/favicon.ico%3Fv=1" type="image/x-icon">
+  <link rel="apple-touch-icon" href="http://conf.scipyla.org/2015/static/favicon.png">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables
+       HTML5 elements & feature detects -->
+  <script src="../2015/static/js/modernizr.custom.js"></script>
+
+  <!-- include stylesheets -->
+    <span id="scrap-style">
+
+
+  <script type="text/javascript"><!--
+    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).
+    var w2p_ajax_confirm_message = "Are you sure you want to delete this object?";
+    var w2p_ajax_date_format = "%Y-%m-%d";
+    var w2p_ajax_datetime_format = "%Y-%m-%d %H:%M:%S";
+    var ajax_error_500 = 'An error occured, please <a href="/activity/accepted">reload</a> the page'
+    //--></script>
+
+<script src="../2015/static/js/jquery.js" type="text/javascript"></script><link href="../2015/static/css/calendar.css" rel="stylesheet" type="text/css" /><script src="../2015/static/js/calendar.js" type="text/javascript"></script><script src="../2015/static/js/web2py.js" type="text/javascript"></script><link href="../2015/static/css/web2py.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/web2py_bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+
+        </span>
+
+  <!-- uncomment here to load jquery-ui
+       <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
+       <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+       uncomment to load jquery-ui //-->
+  <noscript><link href="../2015/static/css/web2py_bootstrap_nojs.css" rel="stylesheet" type="text/css" /></noscript>
+
+</head>
+
+<body>
+  <!-- Navbar ================================================== -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="flash"></div>
+    <div class="navbar-inner">
+      <div class="container">
+        <!-- the next tag is necessary for bootstrap menus, do not remove -->
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <ul id="navbar" class="nav pull-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="accepted.html#" rel="nofollow">Log In</a><ul class="dropdown-menu"><li><a href="../user/register%3F_next=%252Factivity%252Faccepted.html" rel="nofollow"><i class="icon icon-user glyphicon glyphicon-user"></i> Sign Up</a></li><li><a href="../user/request_reset_password%3F_next=%252Factivity%252Faccepted.html" rel="nofollow"><i class="icon icon-lock glyphicon glyphicon-lock"></i> Lost password?</a></li><li class="divider"></li><li><a href="../user/login%3F_next=%252Factivity%252Faccepted.html" rel="nofollow"><i class="icon icon-off glyphicon glyphicon-off"></i> Log In</a></li></ul></li></ul>
+        <div class="nav-collapse">
+
+
+          <ul class="nav"><li class="web2py-menu-first"><a href="../index.html">Home</a></li><li><a href="../user/register.html">Register</a></li><li><a href="../event/press.html">Press</a></li><li><a href="../event/code_of_conduct.html">Code of Conduct</a></li><li class="dropdown"><a href="accepted.html#" onclick="javascript:void(0);return false;">Sponsors</a><ul class="dropdown-menu"><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_en.pdf?raw=true">English (PDF)</a></li><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_es.pdf?raw=true">Español (PDF)</a></li><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_pt.pdf?raw=true">Português (PDF)</a></li></ul></li><li><a href="teen_track.html">Teen Track</a></li><li><a href="../activity.1.html">Proposals</a></li><li class="web2py-menu-last"><a href="../schedule.html">Schedule</a></li></ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div><!--/top navbar -->
+
+  <div class="container">
+    <!-- Masthead ================================================== -->
+    <header class="mastheader row" id="header">
+        <div class="span12">
+            <div class="page-header">
+                <h1 style="color: #333333;">
+                    <img src="../2015/static/scipyla.png" />
+                    SciPy Latin America 2015
+                    <small>May 20-22 Posadas, Misiones, Argentina</small>
+                </h1>
+                <small class="pull-right">
+                    <strong>Previous Editions: </strong>
+                    <a target="_blank" href="http://www.scipyla.org/conf/2014/">2014</a>,
+                    <a target="_blank" href="http://www.scipyla.org/conf/2013/">2013</a>
+                </small>
+            </div>
+        </div>
+    </header>
+
+    <section id="main" class="main row">
+
+        <div class="span9">
+
+
+
+<style>
+    .activity-type {
+        color: #0f824d;
+    }
+</style>
+
+<div class="frame">
+
+<h1>Accepted Activities</h1>
+
+<p><b>Nota: </b>El listado de actividades es provisorio, próximamente será actualizado con las charlas, tutoriales y otras actividades pendientes.</p>
+<p></p>
+
+
+
+
+
+<p/>
+<h2 class="center activity-type" id="pre-scipy">Pre-Scipy - track general</h2>
+
+
+
+<div id="38">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/38">Ciencia y Programación (Una introducción a Python)</a>
+<a class="headerlink" href="accepted.html#38" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video38').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Juan B Cabral</a> (<a href="http://iate.oac.uncor.edu/">IATE-OAC</a>)</td>
+  <sup><a onclick="jQuery('#bio38').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio38" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Soy ingeniero en sistemas y actual doctorando en machine-learning para astrofísica en la Universidad de Rosario. Fui chair de PyDay Córdoba 2011, PyCon Argentina 2012 ademas de ser miembro fundador de SciPy Latam.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias:
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Nuestras computadoras cada día son mas poderosas. En el siglo XXI recolectamos muchos mas datos de lo que cientos de personas a lo largo de toda su vida. Esta combinación de capacidad de computo  y disponibilidad de datos hace que sea necesario que se utilicen nuevas herramientas para lograr análisis satisfactorios entre los cuales los lenguajes dinámicos de alto nivel están democratizando la investigación. A lo largo de esta introducción vamos a ver como se utiliza el lenguaje Python y ventajas (y desventajas) que posee para expresar soluciones a los problemas de construcción de software</div>
+
+  <div id="description38" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs38" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.bf048e1c70163b08.736c696465732e706466.pdf%3Ffilename=slides.pdf">slides.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video38" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="40">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/40">Enseñando con un paper interactivo</a>
+<a class="headerlink" href="accepted.html#40" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video40').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Nahuel Defossé</a> (<a></a>)</td>
+  <sup><a onclick="jQuery('#bio40').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio40" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Master degree student in Networks and Data Transmission, teaching at UNP and devop-ing at Machinalis.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias:
+  </span>
+  <div class="wiki" style="padding-left: 3em;">IPython notebook es una herramienta muy poderosa para la enseñanza, extiende el paradigma de los slides (“filminas”) estáticos con la capacidad de generación interactiva de contenido, interacción con recursos externos y diversidad de formatos de distribución.<br />En esta charla se dará una pequeña introducción a formas de utilización en materias de Ciencias de la Computación como materias introductorias a la programación, bases de datos y sistemas operativos.</div>
+
+  <div id="description40" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs40" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Todos los archivos utilizados en la presentación: <a href="download/attachment.file.8e904f529ee82b71.70617065722e7a6970.zip%3Ffilename=paper.zip">paper.zip</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video40" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="39">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/39">Múltiples Herramientas Científicas en Python</a>
+<a class="headerlink" href="accepted.html#39" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video39').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://www.damian.oquanta.info/">Damián Avila</a> (<a href="http://continuum.io/">Continuum Analytics</a>)</td>
+  <sup><a onclick="jQuery('#bio39').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio39" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">﻿<strong>Background</strong>Damián Avila is a Software Developer, Data Scientist, Quantitative Analyst/Developer and, formerly, a Biochemist-Immunologist from the U.N.L.P, Buenos Aires, Argentina.His main focus of interests are Data Science, Finance, Data Visualization and the Jupyter/IPython ecosystem. He uses Python as his main computational tool, but he also has experience working with other high level programming languages.In the open source area, he has made meaningful contribution to several project, and now he is recognized as a core developer of popular projects, such as Jupyter/IPython, Nikola and Bokeh. He has also started his own projects, such as the "IPython plugin for NINJA-IDE", vIPer and RISE (aka, RJSE, a "live" slideshow machinery for the Jupyter/IPython notebook).He has presented talks, tutorials and posters in several national and international conferences and he has also written and taught tutorials about the Scientific Python ecosystem.Finally, he's a member of Python Argentina, Scientific Python Argentina and the Quantitative Finance Club. Currently, he's working as a Software Developer at Continuum Analytics.For more information:* GitHub profile: [<a href="https://github.com/damianavila">https://github.com/damianavila</a>](<a href="https://github.com/damianavila">https://github.com/damianavila</a>) * Technical blog: [<a href="http://www.damian.oquanta.info">http://www.damian.oquanta.info</a>/](<a href="http://www.damian.oquanta.info">http://www.damian.oquanta.info</a>/)More references:<strong>Organizations</strong>* [<a href="http://python.org.ar">http://python.org.ar</a>/](<a href="http://python.org.ar">http://python.org.ar</a>/) * [<a href="http://groups.google.com/forum/?fromgroups">http://groups.google.com/forum/?fromgroups</a>#!forum/sci-pyar](<a href="http://groups.google.com/forum/?fromgroups">http://groups.google.com/forum/?fromgroups</a>#!forum/sci-pyar) * [<a href="http://quantfinanceclub.com">http://quantfinanceclub.com</a>/](<a href="http://quantfinanceclub.com">http://quantfinanceclub.com</a>/)<strong>Videos</strong>This is an incomplete list of my talks and tutorials:* English* PyCon Brasil 2014 (to be uploaded) * Scipy 2014 [<a href="https://www.youtube.com/watch?v=sZBKruEh0jI">https://www.youtube.com/watch?v=sZBKruEh0jI</a>](<a href="https://www.youtube.com/watch?v=sZBKruEh0jI">https://www.youtube.com/watch?v=sZBKruEh0jI</a>) * SciPy 2013 [<a href="http://www.youtube.com/watch?v=rBS6hmiK-H8">http://www.youtube.com/watch?v=rBS6hmiK-H8</a>](<a href="http://www.youtube.com/watch?v=rBS6hmiK-H8">http://www.youtube.com/watch?v=rBS6hmiK-H8</a>) * SciPy 2013 [<a href="http://www.youtube.com/watch?v=NVf_giNcNro">http://www.youtube.com/watch?v=NVf_giNcNro</a>](<a href="http://www.youtube.com/watch?v=NVf_giNcNro">http://www.youtube.com/watch?v=NVf_giNcNro</a>) * PyConUS 2012 [<a href="http://us.pycon.org/2012/schedule/presentation/513">http://us.pycon.org/2012/schedule/presentation/513</a>/](<a href="http://us.pycon.org/2012/schedule/presentation/513">http://us.pycon.org/2012/schedule/presentation/513</a>/) * PyConUS 2012 [<a href="http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp">http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp</a>](<a href="http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp">http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp</a>)* Spanish* SciPyConAr 2014 (to be uploaded) * SciPyConAr 2014 (to be uploaded) * PyCon Argentina 2014 (to be uploaded) * PyCon Argentina 2014 [<a href="https://www.youtube.com/watch?v=fTRkm3d6ebw">https://www.youtube.com/watch?v=fTRkm3d6ebw</a>](<a href="https://www.youtube.com/watch?v=fTRkm3d6ebw">https://www.youtube.com/watch?v=fTRkm3d6ebw</a>) * SciPyConAr 2013 [<a href="http://www.youtube.com/watch?v=x1_LPVFsPIU">http://www.youtube.com/watch?v=x1_LPVFsPIU</a>](<a href="http://www.youtube.com/watch?v=x1_LPVFsPIU">http://www.youtube.com/watch?v=x1_LPVFsPIU</a>) * SciPyConAr 2013 [<a href="http://www.youtube.com/watch?v=l50KXv0-2vE">http://www.youtube.com/watch?v=l50KXv0-2vE</a>](<a href="http://www.youtube.com/watch?v=l50KXv0-2vE">http://www.youtube.com/watch?v=l50KXv0-2vE</a>) * SciPyConAr 2013 [<a href="http://www.youtube.com/watch?v=gLYCK0SuPoY">http://www.youtube.com/watch?v=gLYCK0SuPoY</a>](<a href="http://www.youtube.com/watch?v=gLYCK0SuPoY">http://www.youtube.com/watch?v=gLYCK0SuPoY</a>) * PyCon Argentina 2013 [<a href="http://www.youtube.com/watch?v=17DPZlKQDk8">http://www.youtube.com/watch?v=17DPZlKQDk8</a>](<a href="http://www.youtube.com/watch?v=17DPZlKQDk8">http://www.youtube.com/watch?v=17DPZlKQDk8</a>) * PyCon Argentina 2013 [<a href="http://www.youtube.com/watch?v=4-O5NZKD3hI">http://www.youtube.com/watch?v=4-O5NZKD3hI</a>](<a href="http://www.youtube.com/watch?v=4-O5NZKD3hI">http://www.youtube.com/watch?v=4-O5NZKD3hI</a>) * PyCon Argentina 2012 [<a href="http://www.youtube.com/watch?v=M-crhRKfsZU">http://www.youtube.com/watch?v=M-crhRKfsZU</a>](<a href="http://www.youtube.com/watch?v=M-crhRKfsZU">http://www.youtube.com/watch?v=M-crhRKfsZU</a>)</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias:
+  </span>
+  <div class="wiki" style="padding-left: 3em;">En esta charla se presentará un overview de las bibliotecas del stack de python científico, las cuales permiten trabajar con datos en varios tipos de workflows, proveyendo al científico de datos e investigadores de las herramientas necesarias para desarrollar su labor principal: "descubrir" la estructura subyacente y la dináḿica de los datos con los que trabaja. Asimismo, se hará incapié en las alternativas para un rápido start-up del stack científico, en particular, demostrando las potencialidades del la distribution de Python Anaconda así como su manejador de paquetes multiplataforma: conda.</div>
+
+  <div id="description39" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs39" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Talk: <a href="download/attachment.file.a93aa1d161627dcd.4dc3ba6c7469706c65732048657272616d69656e746173204369656e74c3ad666963617320656e20507974686f6e2e6970796e62.ipynb%3Ffilename=Multiples_herramientas_SciPyLA2015.ipynb">Multiples_herramientas_SciPyLA2015.ipynb</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video39" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="41">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/41">Showing some of the goodies: pandas, scikit-learn and matplotlib</a>
+<a class="headerlink" href="accepted.html#41" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video41').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="https://yetanotherlog.wordpress.com/">Celia Cintas</a> (<a href="http://www.cenpat.edu.ar/">CENPAT-CONICET</a>)</td>
+  <sup><a onclick="jQuery('#bio41').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio41" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Celia Cintas is a PhD student in Computer Science working at CENPAT on "Human Evolutionary Biology" research group.  Co organizer of SciPyCon Argentina 2013 and 2014. Free software advocate. Assistant Professor at UNPSJB in Fundamentals of Computer Science and Business Intelligence.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias:
+  </span>
+  <div class="wiki" style="padding-left: 3em;">En esta charla daremos un paneo sobre las bondades y posibilidades de trabajar nuestros datos con <strong>Python</strong>. Desde la carga y preparación  de datos en <strong>pandas</strong> de forma rápida y sencilla, dentro de esta biblioteca visitaremos tópicos de cómo:<ul><li>Cargar nuestros datos desde distintos tipos de formatos (html, csv, txt, xls, json, sql, hdf5, etc.)</li><li>Trabajar con datos incompletos.</li><li>Agrupar, manejar índices, ordenar nuestros datos.</li><li>Aplicar funciones a un subconjunto de datos.</li><li>Unir varios conjuntos de datos de distintas maneras.</li><li>Guardar nuestros datos en varios formatos.</li></ul>También veremos que análisis podemos hacer sobre nuestros datos previamente preparados con <strong>scikit-learn</strong> cómo:<ul><li>Reducción de dimensiones.</li><li>Selección de modelos y parámetros.</li><li>Algoritmos de clasificación, regresión, agrupamiento, etc.</li></ul>Y luego de haber analizado los datos veremos cómo graficar con <strong>matplotlib</strong>, aquí se recorrerán los distintos tipos de gráficos que se pueden realizar en 2D y 3D (scatter plots, barras, líneas, imágenes, contornos, mapas, tortas, gráficos polares, plots de flujo, etc.) y cómo guardarlos.</div>
+
+  <div id="description41" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs41" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Slides: <a href="download/attachment.file.bd041d19c9e32e22.7072652d73636970796c612e706466.pdf%3Ffilename=pre-scipyla.pdf">pre-scipyla.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video41" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p/>
+<h2 class="center activity-type" id="tutorial">Tutorial - track general</h2>
+
+
+
+<div id="42">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/42">Como elegir un elemento al azar de un stream infinito</a>
+<a class="headerlink" href="accepted.html#42" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video42').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Lucio Torre</a> (<a href="http://www.satellogic.com">Satellogic</a>)</td>
+  <sup><a onclick="jQuery('#bio42').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio42" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller"></div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias:
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Un repaso por algunos algoritmos de procesamientos de streams, desde average a CountMin sketches.</div>
+
+  <div id="description42" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs42" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.9b849e040805c9e2.416c676f7269746d6f732064652073747265616d696e672e706466.pdf%3Ffilename=slides.pdf">slides.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video42" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="18">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/18">Cómo acelerar tu código Python</a>
+<a class="headerlink" href="accepted.html#18" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video18').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://pybonacci.org">Juan Luis Cano y Kiko Correoso</a> (<a href="http://pybonacci.org">Pybonacci</a>)</td>
+  <sup><a onclick="jQuery('#bio18').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio18" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">
+  Juan Luís es estudiante de Ingeniería Aeronáutica en la Universidad Politécnica de
+Madrid mientras que Kiko trabaja de ingeniero senior en Iberdrola Ingeniería y Construcción. Ambos son, respectivamente, presidente y vicepresidente de la Asociación Python España y organizadores a varios niveles de las Python Conference España, Python-Madrid.Juan Luís,es formador de Python Científico en empresas y universidades, colaborador en multitud de proyectos relacionados y creador de la biblioteca poliastro para análisis de órbitas interplanetarias con Python. Actualmente becario en la empresa Airbus Operations SL y desarrollando mi proyecto fin de carrrera sobre análisis de interfaz fluido-estructura con Python. Por su parte, Kiko está interesado en la visualización de información y llevar la ciencia de forma didáctica a todos los ámbitos. Dedica parte de su tiempo libre a diferentes proyectos, entre los cuales se encuentran algunas extensiones para el notebook Jupyter, Brython, una jimplementación javascript de Python 3 que corre en navegadores web. Actualmente realiza tareas de analítica de datos y simulaciones físicas para el negocio offshore eólico de Iberdrola donde, internamente, imparte cursos de formación en Python científico.
+
+  </div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Actualmente existen diversas metodologías y herramientas para mejorar el rendimiento de Python para alcanzar velocidades similares a las de código compilado sin dejar de aprovechar la versatilidad de este lenguaje. Cada una tiene aplicaciones, grados de madurez y enfoques ligeramente distintos, de modo que conviene conocerlas y saber aprovechar las ventajas de cada una. En este tutorial exploraremos las posibilidades de tecnologías como NumPy, PyPy, Cython, numba y otras, y las compararemos en términos de eficacia y facilidad de uso.</div>
+
+  <div id="description18" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs18" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+      </ul>
+  </div>
+
+  <div id="video18" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="35">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/35">Resolviendo problemas de Inteligencia Artificial con SimpleAI (tutorial)</a>
+<a class="headerlink" href="accepted.html#35" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video35').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://github.com/fisadev">Juan Pedro Fisanotti</a> (<a href="http://machinalis.com">Machinalis</a>)</td>
+  <sup><a onclick="jQuery('#bio35').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio35" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Python es mi favorito desde hace unos años, aunque también me gustan mucho Ruby y Lisp. Antes hice bastante desarrollo web y móvil, y ahora estoy trabajando en una empresa donde hacemos todo en Python focalizado principalmente en inteligencia artificial y algunos temas relacionados. Fuera de la computación me interesa cualquier cosa que me haga pensar un poco.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, educación, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Una tutorial a la resolución de problemas de Inteligencia Artificial utilizando la biblioteca SimpleAI. En este tutorial presentaremos la herramienta, y resolveremos entre todos un problema sencillo utilizando técnicas de Inteligencia Artificial.</div>
+
+  <div id="description35" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs35" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Código del problema resuelto durante el tutorial. Requiere instalar la libreria simpleai (más info sobre instalación en http://simpleai.readthedocs.org/en/latest/ ): <a href="download/attachment.file.872ad4b201693b31.3870757a7a6c652e7079.py%3Ffilename=8puzzle.py">8puzzle.py</a></li>
+
+          <li>Slides de la charla: <a href="download/attachment.file.ad31a976ab032175.73696d706c6561692d696e74726f2e706466.pdf%3Ffilename=simpleai-intro.pdf">simpleai-intro.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video35" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="3">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/3">Version control for novices</a>
+<a class="headerlink" href="accepted.html#3" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video3').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://rgaiacs.com/">Raniere Silva</a> (<a href="http://software-carpentry.org/">Software Carpentry</a>)</td>
+  <sup><a onclick="jQuery('#bio3').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio3" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Raniere Silva is a member of the Software Carpentry Foundation's Steering Committee. He is a undergraduate of applied mathematics at University of Campinas working with linear programming. His focus is in free/open software for the collaborative development of robust, reproducible, and scalable software tools for computational science and open science/access.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: educación, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">This tutorial will teach participants how to use Git to control revisions of their works.</div>
+
+  <div id="description3" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs3" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>slides de la primer parte del tutorial (la intro teórica), en formato ipython notebook: <a href="download/attachment.file.b3da0657a24ff05f.6769742d696e74726f2e6970796e62.ipynb%3Ffilename=git-intro.ipynb">git-intro.ipynb</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video3" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p/>
+<h2 class="center activity-type" id="talk">Talk - track general</h2>
+
+
+
+<div id="31">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/31">Bokeh: Complejas visualizaciones a la vuelta de la esquina</a>
+<a class="headerlink" href="accepted.html#31" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video31').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://www.damian.oquanta.info/">Damián Avila</a> (<a href="http://continuum.io/">Continuum Analytics</a>)</td>
+  <sup><a onclick="jQuery('#bio31').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio31" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">﻿<strong>Background</strong>Damián Avila is a Software Developer, Data Scientist, Quantitative Analyst/Developer and, formerly, a Biochemist-Immunologist from the U.N.L.P, Buenos Aires, Argentina.His main focus of interests are Data Science, Finance, Data Visualization and the Jupyter/IPython ecosystem. He uses Python as his main computational tool, but he also has experience working with other high level programming languages.In the open source area, he has made meaningful contribution to several project, and now he is recognized as a core developer of popular projects, such as Jupyter/IPython, Nikola and Bokeh. He has also started his own projects, such as the "IPython plugin for NINJA-IDE", vIPer and RISE (aka, RJSE, a "live" slideshow machinery for the Jupyter/IPython notebook).He has presented talks, tutorials and posters in several national and international conferences and he has also written and taught tutorials about the Scientific Python ecosystem.Finally, he's a member of Python Argentina, Scientific Python Argentina and the Quantitative Finance Club. Currently, he's working as a Software Developer at Continuum Analytics.For more information:* GitHub profile: [<a href="https://github.com/damianavila">https://github.com/damianavila</a>](<a href="https://github.com/damianavila">https://github.com/damianavila</a>) * Technical blog: [<a href="http://www.damian.oquanta.info">http://www.damian.oquanta.info</a>/](<a href="http://www.damian.oquanta.info">http://www.damian.oquanta.info</a>/)More references:<strong>Organizations</strong>* [<a href="http://python.org.ar">http://python.org.ar</a>/](<a href="http://python.org.ar">http://python.org.ar</a>/) * [<a href="http://groups.google.com/forum/?fromgroups">http://groups.google.com/forum/?fromgroups</a>#!forum/sci-pyar](<a href="http://groups.google.com/forum/?fromgroups">http://groups.google.com/forum/?fromgroups</a>#!forum/sci-pyar) * [<a href="http://quantfinanceclub.com">http://quantfinanceclub.com</a>/](<a href="http://quantfinanceclub.com">http://quantfinanceclub.com</a>/)<strong>Videos</strong>This is an incomplete list of my talks and tutorials:* English* PyCon Brasil 2014 (to be uploaded) * Scipy 2014 [<a href="https://www.youtube.com/watch?v=sZBKruEh0jI">https://www.youtube.com/watch?v=sZBKruEh0jI</a>](<a href="https://www.youtube.com/watch?v=sZBKruEh0jI">https://www.youtube.com/watch?v=sZBKruEh0jI</a>) * SciPy 2013 [<a href="http://www.youtube.com/watch?v=rBS6hmiK-H8">http://www.youtube.com/watch?v=rBS6hmiK-H8</a>](<a href="http://www.youtube.com/watch?v=rBS6hmiK-H8">http://www.youtube.com/watch?v=rBS6hmiK-H8</a>) * SciPy 2013 [<a href="http://www.youtube.com/watch?v=NVf_giNcNro">http://www.youtube.com/watch?v=NVf_giNcNro</a>](<a href="http://www.youtube.com/watch?v=NVf_giNcNro">http://www.youtube.com/watch?v=NVf_giNcNro</a>) * PyConUS 2012 [<a href="http://us.pycon.org/2012/schedule/presentation/513">http://us.pycon.org/2012/schedule/presentation/513</a>/](<a href="http://us.pycon.org/2012/schedule/presentation/513">http://us.pycon.org/2012/schedule/presentation/513</a>/) * PyConUS 2012 [<a href="http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp">http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp</a>](<a href="http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp">http://www.youtube.com/watch?v=MIAKOMzRl1I&amp;feature=plcp</a>)* Spanish* SciPyConAr 2014 (to be uploaded) * SciPyConAr 2014 (to be uploaded) * PyCon Argentina 2014 (to be uploaded) * PyCon Argentina 2014 [<a href="https://www.youtube.com/watch?v=fTRkm3d6ebw">https://www.youtube.com/watch?v=fTRkm3d6ebw</a>](<a href="https://www.youtube.com/watch?v=fTRkm3d6ebw">https://www.youtube.com/watch?v=fTRkm3d6ebw</a>) * SciPyConAr 2013 [<a href="http://www.youtube.com/watch?v=x1_LPVFsPIU">http://www.youtube.com/watch?v=x1_LPVFsPIU</a>](<a href="http://www.youtube.com/watch?v=x1_LPVFsPIU">http://www.youtube.com/watch?v=x1_LPVFsPIU</a>) * SciPyConAr 2013 [<a href="http://www.youtube.com/watch?v=l50KXv0-2vE">http://www.youtube.com/watch?v=l50KXv0-2vE</a>](<a href="http://www.youtube.com/watch?v=l50KXv0-2vE">http://www.youtube.com/watch?v=l50KXv0-2vE</a>) * SciPyConAr 2013 [<a href="http://www.youtube.com/watch?v=gLYCK0SuPoY">http://www.youtube.com/watch?v=gLYCK0SuPoY</a>](<a href="http://www.youtube.com/watch?v=gLYCK0SuPoY">http://www.youtube.com/watch?v=gLYCK0SuPoY</a>) * PyCon Argentina 2013 [<a href="http://www.youtube.com/watch?v=17DPZlKQDk8">http://www.youtube.com/watch?v=17DPZlKQDk8</a>](<a href="http://www.youtube.com/watch?v=17DPZlKQDk8">http://www.youtube.com/watch?v=17DPZlKQDk8</a>) * PyCon Argentina 2013 [<a href="http://www.youtube.com/watch?v=4-O5NZKD3hI">http://www.youtube.com/watch?v=4-O5NZKD3hI</a>](<a href="http://www.youtube.com/watch?v=4-O5NZKD3hI">http://www.youtube.com/watch?v=4-O5NZKD3hI</a>) * PyCon Argentina 2012 [<a href="http://www.youtube.com/watch?v=M-crhRKfsZU">http://www.youtube.com/watch?v=M-crhRKfsZU</a>](<a href="http://www.youtube.com/watch?v=M-crhRKfsZU">http://www.youtube.com/watch?v=M-crhRKfsZU</a>)</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: web
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Bokeh es capaz de generar fantásticas visualizaciones a partir de unas pocas (y simples) lineas de código. Esta charla pretende, no sólo explorar las herramientas que Bokeh posee para realizar gráficas simples, sino también demostrar las complejas visualizaciones, optimizadas para la exploración de datos por parte del usuario final, que se pueden construir en sólo minutos.</div>
+
+  <div id="description31" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs31" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Talk: <a href="download/attachment.file.9d26b7eda59a84b7.426f6b65682053636950794c6120323031352e6970796e62.ipynb%3Ffilename=Bokeh_SciPyLA2015.ipynb">Bokeh_SciPyLA2015.ipynb</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video31" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="36">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/36">Data Science for Managers</a>
+<a class="headerlink" href="accepted.html#36" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video36').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://medium.com/@pdelboca">Patricio Del Boca</a> (<a>Pi - Data Strategy &amp; Consulting</a>)</td>
+  <sup><a onclick="jQuery('#bio36').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio36" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Information System Engineer. Certified ScrumMaster &amp; Data Enthusiast. GNU/Linux User. Individuals and interactions over almost everything</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: fomento, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Introducción a los conceptos básicos de Data Science. Repaso y explicación del ciclo de vida genérico de un Proyecto de Data Science. Riesgos y particularidades de cada etapa. Thumb-Rules para un buen proyecto.</div>
+
+  <div id="description36" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs36" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Estos son los slides de la presentación. Ya la dí en el meetup de Data Science de Córdoba. Las voy a modificar, pero lo sustancial queda.: <a href="download/attachment.file.98e75c18be6f96a4.4461746120536369656e636520666f72204d616e61676572732e706466.pdf%3Ffilename=Data+Science+for+Managers">Data Science for Managers</a></li>
+
+          <li>: <a href="download/attachment.file.84b1b31d1435870c.4461746120536369656e636520666f72204d616e61676572732e706466.pdf%3Ffilename=Data+Science+for+Managers">Data Science for Managers</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video36" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="13">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/13">Detección de eventos transitorios en imágenes astronómicas</a>
+<a class="headerlink" href="accepted.html#13" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video13').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Bruno Sánchez</a> (<a>IATE - CONICET</a>)</td>
+  <sup><a onclick="jQuery('#bio13').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio13" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Graduated from UNC at Astronomy career, actually a PhD. student and a rookie programmer.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: ciencia
+  </span>
+  <div class="wiki" style="padding-left: 3em;">La detección de las ondas gravitacionales es el próximo experimento capaz de demostrar la veracidad de las predicciones de la Relatividad General. A fines prácticos, un trazador astrofísico es indispensable para la confirmación independiente de la naturaleza del evento. Encontrar este evento secundario es una tarea de elevada importancia, y complejidad. Para esto se utilizan programas orientados a maximizar en órdenes de magnitud la capacidad de los instrumentos. Desarrollamos herramientas para lograr esto utilizando las facilidades que Python y sus librerías scipy, y astropy ofrecen.</div>
+
+  <div id="description13" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs13" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>PDF slides of my talk given at SciPy LA 2015 : <a href="download/attachment.file.9228f71e8fff75a1.636861726c617363697079323031352e706466.pdf%3Ffilename=talk_Bruno_Sanchez_SciPy2015">talk_Bruno_Sanchez_SciPy2015</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video13" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="22">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/22">El uso de Python como apoyo al pesaje de vehículos de carga en movimiento</a>
+<a class="headerlink" href="accepted.html#22" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video22').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="https://github.com/xmnfw">Ivan Ogassavara</a> (<a href="http://labtrans.ufsc.br">LabTrans - UFSC</a>)</td>
+  <sup><a onclick="jQuery('#bio22').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio22" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Experto en desarrollo de algoritmos para resolución de problemas en diversos tipos de áreas como educación, gestión pública, comercio, salud y ingeniería de transportes. Actualmente trabajando en desarrollo y proyectos de sistemas de apoyo de pesaje de camiones en movimiento en alta velocidad.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: caso de estudio
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Muchos accidentes en carreteras son causados, directamente o indirectamente, por vehículos de carga conducidos con sobrepeso. Estos damnifican más el pavimento y también sufren más efectos dinámicos durante las curvas.<br />Para inhibir el exceso de peso de los vehículos de carga, es necesario fiscalizar estas infracciones y, cuando necesario, aplicar las medidas establecidas por ley, como multas y aprehensiones. Un método que está siendo investigado en muchas partes del mundo es el pesaje en movimiento. Este método tiene como ventajas la economía en espacio físico y operación, ya que sus sensores son implantados en la propia carretera, y no implica en atrasos directos en el flujo de la vía, pues puede pesar los camiones transitando en alta velocidad.<br />En el proyecto desarrollado en el laboratorio de transportes (LabTrans) de la Universidade Federal de Santa Catarina (UFSC), el lenguaje Python fue adoptado para substituir el sistema anterior hecho en LabView. El motivo principal de esta migración fue la utilización de un lenguaje con estructuras transparentes, distinto del LabView (este trabaja con programación en bloques y, a veces, de acceso restricto.<br />El lenguaje Python es potenciado por las innumerables librerías de apoyo que le proporciona un mejor desempeño (a veces muy cerca de lenguajes como C y Java) y mayor comodidad para manipular los datos (como en el lenguaje R).<br />Las librerías utilizadas en este proyecto fueron: numpy, scipy, flask, pandas, pandasql, sqlalchemy, statsmodels, numba, pymodelfit, scikit-learn, pydaqmx.</div>
+
+  <div id="description22" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs22" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.aad387fe0fab3051.507957494d2d70726573656e746174696f6e2d736c696465732e706466.pdf%3Ffilename=PyWIM">PyWIM</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video22" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="29">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/29">Extreme Value Theory with Python</a>
+<a class="headerlink" href="accepted.html#29" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video29').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://pybonacci.org">kiko correoso</a> (<a href="http://www.iberdrola.es/inicio/">Iberdrola</a>)</td>
+  <sup><a onclick="jQuery('#bio29').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio29" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">
+  Kiko se licenció y doctoró en ciencias físicas en la Universidad Complutense de Madrid. Actualmente trabaja de ingeniero senior en Iberdrola Ingeniería y Construcción donde realiza tareas de analítica de datos y simulaciones físicas para el negocio offshore eólico de Iberdrola y, además, internamente, imparte cursos de formación en Python científico. Parte de su tiempo libre lo dedica a hacer de vicepresidente de la Asociación Python España, organizar conferencias y meetups y programar alguna cosa, principalmente, en python y javascript. En el ámbito técnico-científico está interesado en la visualización de información y llevar la ciencia de forma didáctica a todos los ámbitos.
+  </div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, caso de estudio, ciencia, comunidad, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">In general, some specific statistical functionality is available only in R. The main motivation to work on this package is to learn about Extreme Value Theory and to try to provide an opinionated EVT package to the Python world.</div>
+
+  <div id="description29" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs29" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>pdf del notebook usado durante la charla en la que se muestra información introductoria sobre teoría de valores extremos y se muestran las capacidades de una librería en desarrollo para poder hacer cálculo de teoría de valores extremos con Python.: <a href="download/attachment.file.abc3fd9e1f7d5ce5.45787472656d655f56616c75655f5468656f72795f2873636970796c6132303135292e6970796e62.ipynb%3Ffilename=Extreme_Value_Theory_%2528scipyla2015%2529.ipynb">Extreme_Value_Theory_(scipyla2015).ipynb</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video29" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="6">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/6">Freelanscience</a>
+<a class="headerlink" href="accepted.html#6" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video6').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="https://www.linkedin.com/in/pablogabrielcelayes">Pablo Gabriel Celayes</a> (<a href="http://www.famaf.unc.edu.ar/"></a>)</td>
+  <sup><a onclick="jQuery('#bio6').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio6" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Mathematician and Computer Analyst on the process of becoming a Data Scientist.Freelance Scientific Full-Stack Python Developer.Bass Player and Nomad.Rustic futbol player.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: caso de estudio, ciencia, comunidad, educación, fomento, herramientas, web
+  </span>
+  <div class="wiki" style="padding-left: 3em;">A walk through the experience of self managing a career plan as scientific Python developer.<br />Lessons learned, tips&amp;resources and many examples of awesome ways of improving your skills with the Python scientific stack and getting paid in the process.</div>
+
+  <div id="description6" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs6" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>filminas de la charla.: <a href="download/attachment.file.bf1c74ad994f71f6.467265656c616e536369656e63652e706466.pdf%3Ffilename=freelanscience.pdf">freelanscience.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video6" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="30">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/30">Information Extraction, herramientas y visualización, todo con IEPY</a>
+<a class="headerlink" href="accepted.html#30" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video30').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Javier Mansilla</a> (<a href="http://www.machinalis.com">Machinalis</a>)</td>
+  <sup><a onclick="jQuery('#bio30').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio30" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">I'm a pragmatic developer. Passionate about testing, coding standards, simplicity, maintainability, and best practices. During the last 10 years mixing time between python development, web, and entrepreneurship. Machine Learning and NLP enthusiastic.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, caso de estudio, ciencia, lenguaje
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Apuntado al interesado en Procesamiento de Lenguaje Natural.<br />Un paseo por las posibilidades que ofrece IEPY como herramienta en el mundo del NLP. Desde el etiquetado manual u automático de diferentes etapas, pasando por la visualización de los mismos, hasta las potencialidades predictivas para hacer extracción de relaciones.<br />Se hará un repaso por las tecnologías escogidas, potencialidades, y ejemplos de uso.</div>
+
+  <div id="description30" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs30" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.b1f76c3dd7708b6a.696570795f73636970796c612e706466.pdf%3Ffilename=iepy_scipyla.pdf">iepy_scipyla.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video30" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="33">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/33">Machine Learning y problemas pequeños</a>
+<a class="headerlink" href="accepted.html#33" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video33').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://github.com/fisadev">Juan Pedro Fisanotti</a> (<a href="http://machinalis.com">Machinalis</a>)</td>
+  <sup><a onclick="jQuery('#bio33').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio33" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Python es mi favorito desde hace unos años, aunque también me gustan mucho Ruby y Lisp. Antes hice bastante desarrollo web y móvil, y ahora estoy trabajando en una empresa donde hacemos todo en Python focalizado principalmente en inteligencia artificial y algunos temas relacionados. Fuera de la computación me interesa cualquier cosa que me haga pensar un poco.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: caso de estudio, ciencia
+  </span>
+  <div class="wiki" style="padding-left: 3em;">No todos los problemas de machine learning requieren grandes volúmenes de datos y poder de cómputo para ser resueltos. En muchos casos podemos encontrarnos con problemas pequeños, e incluso es posible "achicar" problemas grandes sin dejar de obtener resultados aceptables para su contexto.<br />En esta charla veremos un ejemplo, su historia de fondo, y algunos consejos sobre cómo achicar problemas.</div>
+
+  <div id="description33" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs33" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>slides de la charla, hechas con ipython notebook: <a href="download/attachment.file.ac6422a046f5b4a9.6d616368696e652d6c6561726e696e672d696e74726f2d776f726c646375702e6970796e62.ipynb%3Ffilename=machine-learning-intro-worldcup.ipynb">machine-learning-intro-worldcup.ipynb</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video33" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="1">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/1">Multicriterio y Escalas Ordinales</a>
+<a class="headerlink" href="accepted.html#1" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video1').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Juan B Cabral</a> (<a href="http://iate.oac.uncor.edu/">IATE-OAC</a>)</td>
+  <sup><a onclick="jQuery('#bio1').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio1" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Soy ingeniero en sistemas y actual doctorando en machine-learning para astrofísica en la Universidad de Rosario. Fui chair de PyDay Córdoba 2011, PyCon Argentina 2012 ademas de ser miembro fundador de SciPy Latam.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: ciencia, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">El análisis multicriterio (MCDA) es una subdisciplina en la investigación de operaciones que se utiliza para evaluar diversas posibles soluciones a un determinado problema, considerando un número variable de criterios, se utiliza para apoyar la toma de decisiones en la selección de la solución más conveniente. Por ejemplo: a la elección de cual es el mejor automóvil para comprar teniendo en cuenta: la autonomía, el precio y el confort.  Por lo general las técnicas que se utilizan obtienen como resultado un ranking que jerarquiza las soluciones.<br />En esta charla se propone hacer una introducción a las escuelas de multicriterio (americana y francesa), describir algunos métodos de solución que proponen cada escuela y presentar la problemática que presenta la comparación de escalas ordinales (rankings). Finalmente todos los ejemplos se demostraran utilizando una librería llamada Scikit-Criteria que pretende brindar implementaciones eficientes de MCDA integradas al stack científico de Python, la integración con iniciativas de terceros y finalmente servir de framework para la creación y evaluación de otros métodos de MCDA.</div>
+
+  <div id="description1" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs1" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.a65c2ee743d6970e.736c6964652e706466.pdf%3Ffilename=slides.pdf">slides.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video1" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="16">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/16">noWorkflow: capturing provenance from python scripts</a>
+<a class="headerlink" href="accepted.html#16" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video16').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Joao Pimentel, Leonardo Murta, Vanessa Braganholo</a> (<a href="http://www.ic.uff.br/index.php/en-GB/">Universidade Federal Fluminense</a>)</td>
+  <sup><a onclick="jQuery('#bio16').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio16" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">João Felipe Nicolaci Pimentel is a graduate student at Universidade Federal Fluminense (UFF). He graduated in Computer Science from UFF (2014). During his undergraduate studies, he studied abroad at Washington University in St. Louis (8/2012 - 5/2013). He is currently working with provenance on scientific workflows.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, ciencia, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Python scripts are heavily used for scientific experiments. However, some scientists abandon it to use Scientific Workflow Management Systems, due the necessity to understand where did the result come from. Those systems capture the provenance (origin) of the data involved on computations, allowing trials to be managed, assessed and reproduced.<br />We created noWorkflow (not only Workflow) with the goal to offer infrastructure to capture and analyze provenance from Python scripts in a way that is completely transparent (i.e. allowing scientists to use their scripts without any changes). Thus, noWorkflow adds the possibility to manage, assess and reproduce Python trials without the adoption of an external scientific workflow management system. In this talk, we will present noWorkflow.</div>
+
+  <div id="description16" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs16" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.9c444cddc3a5a482.736c696465735f76352e706466.pdf%3Ffilename=slides_v5.pdf">slides_v5.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video16" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="12">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/12">Per Python ad astra</a>
+<a class="headerlink" href="accepted.html#12" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video12').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://pybonacci.org">Juan Luis Cano Rodríguez</a> (<a href="http://pybonacci.org">Pybonacci</a>)</td>
+  <sup><a onclick="jQuery('#bio12').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio12" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Estudiante de Ingeniería Aeronáutica en la Universidad Politécnica de Madrid, presidente de la Asociación Python España, organizador a varios niveles de las Python Conference España, formador de Python Científico en empresas y universidades, colaborador en multitud de proyectos relacionados y creador de la biblioteca poliastro para análisis de órbitas interplanetarias con Python. Actualmente becario en la empresa Airbus Operations SL y desarrollando mi proyecto fin de carrrera sobre análisis de interfaz fluido-estructura con Python.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: ciencia
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Python se ha ido consolidando en los últimos años como herramienta indispensable en diversas áreas de la ciencia y la técnica. Comprobada su enorme utilidad en Astronomía, el autor propone extender su uso en Mecánica Orbital (o Astrodinámica), tanto para aplicaciones docentes como para resolver problemas reales. Se comentarán diversos proyectos, tanto de reciente creación (poliastro, PyKEP) como algunos más maduros, y se discutirá el posible futuro de las nuevas herramientas de compilación JIT (numba) para este tipo de aplicaciones.</div>
+
+  <div id="description12" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs12" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Diapositivas de la charla &quot;Per Python ad astra&quot;.: <a href="download/attachment.file.b9cd9a5f193acf4e.7065722d707974686f6e2d61642d61737472612e706466.pdf%3Ffilename=per-python-ad-astra.pdf">per-python-ad-astra.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video12" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="24">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/24">Presentación Vectorial basado en DSL Reactivo</a>
+<a class="headerlink" href="accepted.html#24" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video24').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Nahuel Defossé</a> (<a></a>)</td>
+  <sup><a onclick="jQuery('#bio24').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio24" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Master degree student in Networks and Data Transmission, teaching at UNP and devop-ing at Machinalis.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, caso de estudio, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Esta charla presenta los principios de programación reactiva aplicados una librería de visualización que permite definir mediante un lenguaje sencillo cambios de atributos de un diagrama.</div>
+
+  <div id="description24" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs24" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>La versión online se puede conseguir en http://goo.gl/8fB3FW o desde http://github.com/D3f0/pysvgdsl: <a href="download/attachment.file.92aa97794bee2275.50565244534c2e736c696465732e68746d6c.html%3Ffilename=Slides.ipynb.html">Slides.ipynb</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video24" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="15">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/15">Procesamiento de Imágenes con Python y OpenCV para extracción del perfil de escaneo en  listones de madera machihembrada</a>
+<a class="headerlink" href="accepted.html#15" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video15').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Alejandro Dario Villalba</a> (<a href="http://www.ugd.edu.ar/">Universidad Gastón Dachary</a>)</td>
+  <sup><a onclick="jQuery('#bio15').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio15" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Estudiante de Ingeniería en Informática en la Universidad Gastón Dachary</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: caso de estudio
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Aplicación de técnicas de procesamiento de imágenes para la extracción del perfil de escaneo (en un sistema de escaneo 3D) destinado a mejorar la percepción del operario en la industria de la madera machihembrada para pisos</div>
+
+  <div id="description15" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs15" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.abca01f564cd5e35.53636950792032303135202d2044657465636369c3b36e2064656c2070657266696c20646520657363616e656f2e706466.pdf%3Ffilename=Enunciado">Enunciado</a></li>
+
+          <li>Aplicación de técnicas de procesamiento de imágenes para extraer el perfil de escaneo de un sistema de escaneo 3D, destinado a la detección de fallas en listones de madera machihembrada: <a href="download/attachment.file.a45999e227aad25f.50726f632e20496dc3a167656e657320636f6e20507974686f6e2079204f70656e435620736f627265206c6973746f6e6573204d6163686968656d627261646f73202d2056696c6c616c626120412e20442e202d205547442e706466.pdf%3Ffilename=Proc.">Proc. Imágenes con Python y OpenCV sobre listones Machihembrados - Villalba A. D. - UGD</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video15" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="19">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/19">Simulación de reacciones de polimerización RAFT mediante el modelo cinético de Monte Carlo utilizando Julia</a>
+<a class="headerlink" href="accepted.html#19" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video19').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Esteban Pintos</a> (<a href="http://www.plapiqui.edu.ar/">PLAPIQUI - CONICET</a>)</td>
+  <sup><a onclick="jQuery('#bio19').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio19" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Estudiante de doctorado en Ingeniería Química.Tema doctorado: simulación y optimización de reacción químicas. Utilización del lenguaje Julia.(biografía a expandir de ser necesario)</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, lenguaje
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Estoy realizando el doctorado en Ingeniería Química y como parte de mi trabajo de tesis debo programar a diario, ya que realizo simulaciones de reacciones químicas. Me gustaría poder compartir mi experiencia en la programación como "científico" que no se formó, estudió ni tuvo experiencia en programación, y basicamente tener que ponerse a programar de un día para el otro.<br />Específicamente lo que hago son simulaciones de reacciones químicas de polimerización en un lenguaje de programación relativamente nuevo llamado Julia (www.julialang.com), como parte de mi investigación quiero contar porque elegí este lenguaje (comparando su performance con matlab, python y fortran), como así también las dificultades que tuve y tengo que enfrentar a la hora de ponerme a programar por mi cuenta y como las fui y las sigo superando.</div>
+
+  <div id="description19" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs19" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Info sobre Julia y RAFT: <a href="download/attachment.file.91d5de8c5cbb4db6.6a756c69612e7a6970.zip%3Ffilename=slides.zip">slides.zip</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video19" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="2">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/2">Software Carpentry Foundation: Plans for Latin America</a>
+<a class="headerlink" href="accepted.html#2" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video2').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="http://rgaiacs.com/">Raniere Silva</a> (<a href="http://software-carpentry.org/">Software Carpentry</a>)</td>
+  <sup><a onclick="jQuery('#bio2').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio2" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Raniere Silva is a member of the Software Carpentry Foundation's Steering Committee. He is a undergraduate of applied mathematics at University of Campinas working with linear programming. His focus is in free/open software for the collaborative development of robust, reproducible, and scalable software tools for computational science and open science/access.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: comunidad, educación
+  </span>
+  <div class="wiki" style="padding-left: 3em;">This talk will explain what is Software Carpentry Foundation, how we grown to run over a hundred training events a year, what we've learned along the way, and how you can help us to run training events in Latin America.</div>
+
+  <div id="description2" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs2" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Slides: <a href="download/attachment.file.b218bb09ca4f88c8.7377632e7a6970.zip%3Ffilename=swc.zip">swc.zip</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video2" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="37">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/37">Spyder: An IDE designed for scientists</a>
+<a class="headerlink" href="accepted.html#37" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video37').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Carlos Cordoba</a> (<a href="http://continuum.io/">Continuum Analytics</a>)</td>
+  <sup><a onclick="jQuery('#bio37').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio37" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">I have a Bachelor degree in Physics from University of Valle (Colombia) and a Masters degree in Physics from National University of Colombia. Right now I'm working with Continuum Analytics.I'm Spyder current maintainer. My most important contributions to the project have been our quite good IPython qtconsole integration and our Object Inspector plugin to read docstrings rendered as beautiful HTML pages (with Sphinx's help).My main interests are computational science (computational physics before and computational social science right now) and helping to improve open source platforms to do this kind of science.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">The purpose of this talk is to introduce the audience to the most important features that make Spyder a much better environment for scientific work than other Interactive Development Environments (IDE's). These features include customizable Python and IPython consoles, a namespace browser and a rich documentation viewer.</div>
+
+  <div id="description37" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs37" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>Slides de presentación de Spyder: <a href="download/attachment.file.91491e98edf5fe57.5370796465722e706466.pdf%3Ffilename=spyder.pdf">spyder.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video37" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p/>
+<h2 class="center activity-type" id="poster">Poster - track general</h2>
+
+
+
+<div id="27">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/27">Construyendo redes neuronales de forma fácil con Lasagne</a>
+<a class="headerlink" href="accepted.html#27" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video27').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="https://yetanotherlog.wordpress.com/">Celia Cintas</a> (<a href="http://www.cenpat.edu.ar/">CENPAT-CONICET</a>)</td>
+  <sup><a onclick="jQuery('#bio27').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio27" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Celia Cintas is a PhD student in Computer Science working at CENPAT on "Human Evolutionary Biology" research group.  Co organizer of SciPyCon Argentina 2013 and 2014. Free software advocate. Assistant Professor at UNPSJB in Fundamentals of Computer Science and Business Intelligence.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, ciencia
+  </span>
+  <div class="wiki" style="padding-left: 3em;">En este poster mostraremos los pasos necesarios para construir, entrenar y evaluar redes neuronales con Lasagne (implementación sobre Theano), mostrando ejemplos de uso, analizando los diferentes tipos de capas, algoritmos de optimización, etc.</div>
+
+  <div id="description27" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs27" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.a87a5ea7bf3a59b1.6c617361676e652e706e67.png%3Ffilename=lasagne.png">lasagne.png</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video27" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="7">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/7">Implementación de un sistema de cómputo distribudo Map-Reduce sobre AMQP</a>
+<a class="headerlink" href="accepted.html#7" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video7').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Juan B Cabral</a> (<a href="http://iate.oac.uncor.edu/">IATE-OAC</a>)</td>
+  <sup><a onclick="jQuery('#bio7').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio7" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Soy ingeniero en sistemas y actual doctorando en machine-learning para astrofísica en la Universidad de Rosario. Fui chair de PyDay Córdoba 2011, PyCon Argentina 2012 ademas de ser miembro fundador de SciPy Latam.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, caso de estudio, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">El advenimiento de grandes volúmenes de datos (o Big Dat ) esta generando una necesidad de productos que sirvan para la manipulación y resumen de los mismos. Big Data puede considerarse de manera mas o menos precisa (no es mas que un numero comercial) como una cantidad de información tal que no puede procesarse ni almacenarse en un único ordenador. En el siguiente trabajo analiza la implementación del modelo mas popular de los últimos años para el computo dis- tribuido: Map-Reduce  así como un sistema distribuido de almacenamiento de archivos utilizando como sistema de transporte de información el modelo de colas de mensajes AMQP y utilizando como lenguaje de programación Pyt- hon  y su librería de aprendizaje automático Scikit-Learn. El trabajo resultante se hizo publico bajo una licencia laxa bajo del nombre de Poopy en la siguiente dirección web <a href="http://poopy.jbcabral.org">http://poopy.jbcabral.org</a>.</div>
+
+  <div id="description7" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs7" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.a79357f17bf60fcf.706f737465722e706466.pdf%3Ffilename=poster.pdf">poster.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video7" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="17">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/17">noWorkflow: provenance from python scripts</a>
+<a class="headerlink" href="accepted.html#17" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video17').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a>Joao Pimentel, Leonardo Murta, Vanessa Braganholo</a> (<a href="http://www.ic.uff.br/index.php/en-GB/">Universidade Federal Fluminense</a>)</td>
+  <sup><a onclick="jQuery('#bio17').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio17" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">João Felipe Nicolaci Pimentel is a graduate student at Universidade Federal Fluminense (UFF). He graduated in Computer Science from UFF (2014). During his undergraduate studies, he studied abroad at Washington University in St. Louis (8/2012 - 5/2013). He is currently working with provenance on scientific workflows.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: académico, ciencia, herramientas
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Python scripts are heavily used for scientific experiments. However, some scientists abandon it to use Scientific Workflow Management Systems, due the necessity to understand where did the result come from. Those systems capture the provenance (origin) of the data involved on computations, allowing trials to be managed, assessed and reproduced.<br />We created noWorkflow (not only Workflow) with the goal to offer infrastructure to capture and analyze provenance from Python scripts in a way that is completely transparent (i.e. allowing scientists to use their scripts without any changes). Thus, noWorkflow adds the possibility to manage, assess and reproduce Python trials without the adoption of an external scientific workflow management system.</div>
+
+  <div id="description17" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs17" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.9d477b47e9801211.706f737465725f76362e706466.pdf%3Ffilename=poster_v6.pdf">poster_v6.pdf</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video17" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="25">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/25">OpenDEA: Desarrollo de desfibrilador de entrenamiento de bajo costo con Python y Raspberry Pi</a>
+<a class="headerlink" href="accepted.html#25" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video25').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="https://yetanotherlog.wordpress.com/">Celia Cintas, Mirsha Quinto-Sanchez</a> (<a href="http://www.cenpat.edu.ar/">CENPAT-CONICET</a>)</td>
+  <sup><a onclick="jQuery('#bio25').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio25" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Celia Cintas is a PhD student in Computer Science working at CENPAT on "Human Evolutionary Biology" research group.  Co organizer of SciPyCon Argentina 2013 and 2014. Free software advocate. Assistant Professor at UNPSJB in Fundamentals of Computer Science and Business Intelligence.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Beginner </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: caso de estudio, educación
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Este proyecto crea un desfibrilador externo semiautomático (DEA) de entrenamiento, para enseñar a utilizar a los usuarios este tipo de desfibriladores en episodios de paro cardíaco repentino simulados, para conseguir así una formación  realista y los usuarios estén  preparados en el momento en que se produzca un paro cardíaco repentino.</div>
+
+  <div id="description25" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs25" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.abff5e5c67781d1b.4f70656e4445412e706e67.png%3Ffilename=OpenDEA.png">OpenDEA.png</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video25" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+<div id="26">
+
+<h3 style="padding-top: 1em; ><a href="http://conf.scipyla.org/activity/display_activity/26">Visualización de datos geográficos con Basemap</a>
+<a class="headerlink" href="accepted.html#26" title="Enlace permanente a esta charla">¶</a><img src="../2015/static/media/16_file_page.png" alt="archivos" border="0"></a>
+<a onclick="jQuery('#video26').slideToggle()" alt="videos"><img src="../2015/static/media/16_image.png" alt="videos" border="0"></a></h3>
+  <span style="padding-left: 3em;  font-weight: bold;">
+ <a href="https://yetanotherlog.wordpress.com/">Celia Cintas</a> (<a href="http://www.cenpat.edu.ar/">CENPAT-CONICET</a>)</td>
+  <sup><a onclick="jQuery('#bio26').slideToggle()">bio</a></sup> <br/>
+  </span>
+
+  <div id="bio26" style="display: none; padding-left: 4em; padding-bottom: 1em; font-size: smaller">Celia Cintas is a PhD student in Computer Science working at CENPAT on "Human Evolutionary Biology" research group.  Co organizer of SciPyCon Argentina 2013 and 2014. Free software advocate. Assistant Professor at UNPSJB in Fundamentals of Computer Science and Business Intelligence.</div>
+  <span style="padding-left: 3em; font-weight: bold;">Nonemin Level Intermediate </span><br/>
+  <span style="padding-left: 3em; font-weight: bold;">
+    Categorias: ciencia
+  </span>
+  <div class="wiki" style="padding-left: 3em;">Cuando no contamos con un set de datos completos a la hora de mostrarlos en un mapa la tarea puede tornarse un poco más compleja. En este poster mostraremos snippets y recomendaciones a la hora de pre-procesar nuestros datos y visualizarlos con basemap.</div>
+
+  <div id="description26" style="display: none; padding-left: 4em; font-size: smaller"></div>
+  <div id="attachs26" style="padding-left: 4em;">
+                                                                    <h4>
+                                                                    Slides
+                                                                    </h4>
+      <br/>
+      <ul>
+          <li>: <a href="download/attachment.file.a5d0baf9f37fa86d.6d6170732e706e67.png%3Ffilename=maps.png">maps.png</a></li>
+
+      </ul>
+  </div>
+
+  <div id="video26" style="display: none; padding-left: 4em; font-size: smaller">
+    <embed src="accepted.html" type="application/x-shockwave-flash" width="480" height="350" allowscriptaccess="always" allowfullscreen="true"></embed> <br/>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p/>
+<p><b>Nota:</b> El detalle, biografía y fecha/hora asignada se completan automáticamente a medida que los autores actualizan y confirman dichos datos.</p>
+
+
+
+
+</div>
+
+
+        </div>
+
+
+        <div class="span3">
+
+            <a href="http://www.accuweather.com/en/ar/posadas/5168/weather-forecast/5168" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+-->
+</a><div id="awcc1431216046420" class="aw-widget-current"  data-locationkey="5168" data-unit="c" data-language="es" data-useip="false" data-uid="awcc1431216046420"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+
+            <div class="alert alert-error center">
+                <h3>
+                    Conference Map
+                </h3>
+                <p class="center">
+                        <a target="_blank" href="https://www.google.com.ar/maps/@-27.3811201,-55.9120811,13z/data=!4m2!6m1!1sz-qVL_LgL1X4.kwcNWI5-iBdI">
+                    <img src="../2015/static/maps.png" />
+                </a>
+                </p>
+                <small>Airport, Bus Stations, Restaurants, Hotels, ATM, Tourism and More</small>
+            </div>
+
+            <p class="text-center center alert alert-success">
+                <Strong>More About the Venue:</strong><br>
+                <a href="../venue.html">The City</a>,
+                <a href="../venue/traveling.html">Travel to Posadas</a>,
+                <a href="../venue/accomodation.html">Accommodations</a>,
+                <a href="../venue/tours.html">Excursions</a>
+            </p>
+
+
+
+
+
+                     <h3>Organizer</h3>
+                     <ul class="thumbnails">
+
+                        <li class="span4">
+                          <a href="http://scipyla.org" title="SciPy Latin America (Organizer)"><img alt="SciPy Latin America" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8c5eaa0efe34a9eb.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+
+                        <li class="span4">
+                          <a href="http://www.ugd.edu.ar/" title="Universidad Gastón Dachary (Organizer)"><img alt="Universidad Gastón Dachary" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8fb55c8f96c79ad1.7567642e706e67.png" /></a>
+                        </li>
+
+                    </ul>
+
+
+
+                     <h3>Diamond</h3>
+                     <ul class="thumbnails">
+
+                        <li class="span4">
+                          <a href="http://www.machinalis.com/" title="Machinalis (Diamond)"><img alt="Machinalis" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8090f5aa0ca78034.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+
+                        <li class="span4">
+                          <a href="https://www.python.org/psf/" title="Python Software Foundation (Diamond)"><img alt="Python Software Foundation" border="0" class="thumbnail" src="../fast_download/sponsor.logo.92cb3e222b54091e.7073662e706e67.png" /></a>
+                        </li>
+
+                    </ul>
+
+
+
+                     <h3>Gold</h3>
+                     <ul class="thumbnails">
+
+                        <li class="span4">
+                          <a href="http://github.com" title="GitHub (Gold)"><img alt="GitHub" border="0" class="thumbnail" src="../fast_download/sponsor.logo.b73973ab7a86f6e3.6769746875622e706e67.png" /></a>
+                        </li>
+
+                    </ul>
+
+
+
+
+
+                     <h3>Bronze</h3>
+                     <ul class="thumbnails">
+
+                        <li class="span4">
+                          <a href="https://www.enthought.com/" title="Enthought Scientific Computing Solutions (Bronze)"><img alt="Enthought Scientific Computing Solutions" border="0" class="thumbnail" src="../fast_download/sponsor.logo.87b2306a87e9633c.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+
+                    </ul>
+
+
+
+                     <h3>Institutional Endorsement</h3>
+                     <ul class="thumbnails">
+
+                        <li class="span4">
+                          <a href="http://huayra.conectarigualdad.gob.ar/" title="Huayra - GNU Linux (Institutional Endorsement)"><img alt="Huayra - GNU Linux" border="0" class="thumbnail" src="../fast_download/sponsor.logo.9a12f06e292fb0b8.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+
+                        <li class="span4">
+                          <a href="http://www.conectarigualdad.gob.ar/" title="Conectar Igualdad (Institutional Endorsement)"><img alt="Conectar Igualdad" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8ae2f0c8630b75f3.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+
+                    </ul>
+
+
+
+                     <h3>Specials Thanks</h3>
+                     <ul class="thumbnails">
+
+                        <li class="span4">
+                          <a href="https://www.jetbrains.com/pycharm/" title="PyCharm - by JetBrains (Specials Thanks)"><img alt="PyCharm - by JetBrains" border="0" class="thumbnail" src="../fast_download/sponsor.logo.af4928405caa0fcd.6a65742e706e67.png" /></a>
+                        </li>
+
+                    </ul>
+
+
+
+
+
+                     <h3>Adherent</h3>
+                     <ul class="thumbnails">
+
+                        <li class="span4">
+                          <a href="http://elblogdehumitos.com.ar/pages/argentina-en-python/" title="Argentina en Python (Adherent)"><img alt="Argentina en Python" border="0" class="thumbnail" src="../fast_download/sponsor.logo.a357b360f373ec85.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+
+                        <li class="span4">
+                          <a href="http://www.misol.org.ar/" title="MiSoL - Misiones Software Libre (Adherent)"><img alt="MiSoL - Misiones Software Libre" border="0" class="thumbnail" src="../fast_download/sponsor.logo.81e474e18ea7b167.6a65742e706e67.png" /></a>
+                        </li>
+
+                        <li class="span4">
+                          <a href="http://argentina.pyladies.com/" title="pyladies Argentina (Adherent)"><img alt="pyladies Argentina" border="0" class="thumbnail" src="../fast_download/sponsor.logo.a76607472839c3a9.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+
+                        <li class="span4">
+                          <a href="http://pybonacci.org/" title="Juan Luis Cano contacto@pybonacci.org (Adherent)"><img alt="Juan Luis Cano contacto@pybonacci.org" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8317e820b2e4c3b5.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+
+                        <li class="span4">
+                          <a href="http://guaraniturismo.tur.ar/" title="Guaraní Turismo (Adherent)"><img alt="Guaraní Turismo" border="0" class="thumbnail" src="../fast_download/sponsor.logo.9f86463e23ff81c2.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+
+                    </ul>
+
+
+
+
+        </div>
+
+    </section><!--/main-->
+
+    <!-- Footer ================================================== -->
+    <div class="row">
+        <footer class="footer span12" id="footer">
+            <div class="footer-content">
+                 <!-- this is default footer -->
+                <div class="copyright pull-left">Python Scientific Conference 2015 Misiones, Argentina</div>
+                <div id="poweredBy" class="pull-right">
+                    Built using
+                    <a href="../default/about.html">web2conf</a>
+                    Powered by
+                    <a href="http://www.web2py.com/">web2py</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+  </div> <!-- /container -->
+
+  <!-- The javascript =============================================
+       (Placed at the end of the document so the pages load faster) -->
+  <script src="../2015/static/js/bootstrap.min.js"></script>
+  <script src="../2015/static/js/web2py_bootstrap.js"></script>
+  <!--[if lt IE 7 ]>
+      <script src="/2015/static/js/dd_belatedpng.js"></script>
+      <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+      <![endif]-->
+
+
+  <script src="../2015/static/js/share.js%3Fstatic=%252F2015%252Fstatic%252Fimages"></script>
+</body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]><html class="ie ie6 ie-lte9 ie-lte8 ie-lte7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7 ie-lte9 ie-lte8 ie-lte7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8 ie-lte9 ie-lte8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="ie9 ie-lte9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+  <!-- Always force latest IE rendering engine
+       (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <![endif]-->
+
+  <title>SciPy Latin America 2015</title>
+
+  <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+  <meta name="application-name" content="2015" />
+
+  <!-- Speaking of Google, don't forget to set your site up:
+       http://google.com/webmasters -->
+  <meta name="google-site-verification" content="" />
+
+  <!--  Mobile Viewport Fix
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+        device-width: Occupy full width of the screen in its current orientation
+        initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+        user-scalable = yes allows the user to zoom in -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="../2015/static/favicon.ico%3Fv=1" type="image/x-icon">
+  <link rel="apple-touch-icon" href="http://conf.scipyla.org/2015/static/favicon.png">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables
+       HTML5 elements & feature detects -->
+  <script src="../2015/static/js/modernizr.custom.js"></script>
+
+  <!-- include stylesheets -->
+	<span id="scrap-style">
+  
+
+  <script type="text/javascript"><!--
+    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).
+    var w2p_ajax_confirm_message = "Are you sure you want to delete this object?";
+    var w2p_ajax_date_format = "%Y-%m-%d";
+    var w2p_ajax_datetime_format = "%Y-%m-%d %H:%M:%S";
+    var ajax_error_500 = 'An error occured, please <a href="/venue/tours">reload</a> the page'
+    //--></script>
+
+<script src="../2015/static/js/jquery.js" type="text/javascript"></script><link href="../2015/static/css/calendar.css" rel="stylesheet" type="text/css" /><script src="../2015/static/js/calendar.js" type="text/javascript"></script><script src="../2015/static/js/web2py.js" type="text/javascript"></script><link href="../2015/static/css/web2py.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/web2py_bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+  
+		</span>
+
+  <!-- uncomment here to load jquery-ui
+       <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
+       <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+       uncomment to load jquery-ui //-->
+  <noscript><link href="../2015/static/css/web2py_bootstrap_nojs.css" rel="stylesheet" type="text/css" /></noscript>
+  
+</head>
+
+<body>
+  <!-- Navbar ================================================== -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="flash"></div>
+    <div class="navbar-inner">
+      <div class="container">
+        <!-- the next tag is necessary for bootstrap menus, do not remove -->
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+	
+        <ul id="navbar" class="nav pull-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="tours.html#" rel="nofollow">Log In</a><ul class="dropdown-menu"><li><a href="../user/register%3F_next=%252Fvenue%252Ftours.html" rel="nofollow"><i class="icon icon-user glyphicon glyphicon-user"></i> Sign Up</a></li><li><a href="../user/request_reset_password%3F_next=%252Fvenue%252Ftours.html" rel="nofollow"><i class="icon icon-lock glyphicon glyphicon-lock"></i> Lost password?</a></li><li class="divider"></li><li><a href="../user/login%3F_next=%252Fvenue%252Ftours.html" rel="nofollow"><i class="icon icon-off glyphicon glyphicon-off"></i> Log In</a></li></ul></li></ul>
+        <div class="nav-collapse">
+          
+          
+          <ul class="nav"><li class="web2py-menu-first"><a href="../index.html">Home</a></li><li><a href="../user/register.html">Register</a></li><li><a href="../event/press.html">Press</a></li><li><a href="../event/code_of_conduct.html">Code of Conduct</a></li><li class="dropdown"><a href="tours.html#" onclick="javascript:void(0);return false;">Sponsors</a><ul class="dropdown-menu"><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_en.pdf?raw=true">English (PDF)</a></li><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_es.pdf?raw=true">Español (PDF)</a></li><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_pt.pdf?raw=true">Português (PDF)</a></li></ul></li><li><a href="../activity/teen_track.html">Teen Track</a></li><li><a href="../activity.1.html">Proposals</a></li><li class="web2py-menu-last"><a href="../schedule.html">Schedule</a></li></ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div><!--/top navbar -->
+
+  <div class="container">
+    <!-- Masthead ================================================== -->
+    <header class="mastheader row" id="header">
+        <div class="span12">
+            <div class="page-header">
+                <h1 style="color: #333333;">
+                    <img src="../2015/static/scipyla.png" />
+                    SciPy Latin America 2015
+                    <small>May 20-22 Posadas, Misiones, Argentina</small>
+                </h1>
+                <small class="pull-right">
+                    <strong>Previous Editions: </strong>
+                    <a target="_blank" href="http://www.scipyla.org/conf/2014/">2014</a>,
+                    <a target="_blank" href="http://www.scipyla.org/conf/2013/">2013</a>
+                </small>
+            </div>
+        </div>
+    </header>
+
+    <section id="main" class="main row">
+
+        <div class="span9">
+            
+            
+
+<div id="content">
+<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+    
+    <li class=" active ">
+        <a href="tours.html#0en" data-toggle="tab">English</a>
+    </li>
+    
+    <li class="">
+        <a href="tours.html#1es" data-toggle="tab">Español</a>
+    </li>
+    
+    <li class="">
+        <a href="tours.html#2pt" data-toggle="tab">Português</a>
+    </li>
+    
+</ul>
+    <div id="my-tab-content" class="tab-content">
+        
+            <div class="tab-pane  active " id="0en">
+                <p><h1>Excursions</h1>
+
+<p><strong>Disclaimer: This Web site was developed for information. Under no circumstances the organization and the university are responsible for mishaps related accommodations. The information and statements contained in this guide may change by exchange rate fluctuations or changes in rates of companies.</strong></p>
+
+<p>In response to request from the organization, the company <strong>Guarani Turismo</strong> (<a href="http://guaraniturismo.tur.ar/">http://guaraniturismo.tur.ar/</a>) offers different alternatives of visits to tourist areas, starting from the city <strong>Posadas</strong>.</p>
+
+<div style="text-align:center">
+    <a href="http://guaraniturismo.tur.ar/" target="_blank">
+        <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/hotels/imgs/guarani.png" />
+    </a><br>
+    Bolívar 1618<br>
+    Posadas – Misiones – Argentina<br>
+    <a href="mailto:info@guaraniturismo.tur.ar">info@guaraniturismo.tur.ar</a><br>
+    Phone numbers: +54 (0376) 4433308 / 4426292
+</div>
+
+<h2>Procedure to book place in any of the two tours:</h2>
+
+<ul>
+<li>Email with questions or requests for information to  <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#100;&#97;&#x6e;&#105;&#101;&#x6c;&#x40;&#103;&#x75;&#97;&#x72;&#x61;n&#x69;&#x74;&#x75;r&#105;&#115;&#109;&#x6f;&#x2e;&#116;&#117;&#x72;&#46;&#97;&#x72;">&#100;&#97;&#x6e;&#105;&#101;&#x6c;&#x40;&#103;&#x75;&#97;&#x72;&#x61;n&#x69;&#x74;&#x75;r&#105;&#115;&#109;&#x6f;&#x2e;&#116;&#117;&#x72;&#46;&#97;&#x72;</a> /
+<a href="m&#x61;&#105;&#108;&#116;&#111;:&#x73;a&#110;d&#114;&#97;&#x40;&#103;&#117;&#97;&#x72;&#97;&#110;&#x69;&#x74;&#117;&#x72;&#105;&#x73;m&#x6f;&#x2e;&#116;&#x75;&#x72;.&#97;&#114;">&#x73;a&#110;d&#114;&#97;&#x40;&#103;&#117;&#97;&#x72;&#97;&#110;&#x69;&#x74;&#117;&#x72;&#105;&#x73;m&#x6f;&#x2e;&#116;&#x75;&#x72;.&#97;&#114;</a>;</li>
+<li>Detail number of people and nights stay, before paying, will be confirmed by email the requested reservation.</li>
+</ul>
+
+<p><strong>Payment options:</strong> Cash, bank deposit and / or payment by credit card.</p>
+
+<h2><strong>Saturday:</strong> Ruinas de San Ignacio and Cruz de Santa Ana</h2>
+
+<ul>
+<li><strong>Saturday, 23/05/2015</strong></li>
+<li>Half day <strong>afternoon</strong></li>
+</ul>
+
+<p>Departure from hotels to travel about 50 km to the "Parque Temático de La Cruz" located in the city of Santa Ana and the homonymous hill 360 meters above sea level.</p>
+
+<p>Here we will meet an imposing iron cross, of 84 meters, and several panoramic spots, including you can climb the arms by lifting (additional payment) and have an amazing view over the native forest and the city of Posadas.</p>
+
+<p>In addition, inside the complex you can see the orchid garden, butterfly garden, trails and restaurant.</p>
+
+<p>Then we go to the city of San Ignacio, where the most famous Jesuit ruins of the country are located. There, we will enjoy a guided walk through the site, declared as World Heritage by UNESCO. In addition, there will be free time to roam freely through the site</p>
+
+<p>Snack on the way back is included.</p>
+
+<p>Value of the trip per person: <strong>$ 339</strong>, up to 3 payments without interest. Discount for cash payments, <strong>$ 295</strong></p>
+
+<ul>
+<li>Link of interest: http://goo.gl/iZO497 - youtube video Cruz</li>
+<li>Link of interest: http://goo.gl/uYsy7q - youtube video Ruinas</li>
+</ul>
+
+<div style="text-align:center">
+    <img src ="https://raw.githubusercontent.com/scipy-latinamerica/scipyla2015/master/tours/imgs/si.jpg" /><br>
+    <small>Cruz de Santa Ana and Ruinas de San Ignacio</small>
+</div>
+
+<p>Minimum amount to reserve places $ 100. You should wear comfortable clothes.</p>
+
+<p>Tickets and lift to the arms of the Cross, not included. Minimum of 15 people to depart.</p>
+
+<h2><strong>Sunday:</strong> Iguazu Falls and Wanda Mines</h2>
+
+<ul>
+<li>Suggested day: <strong>Sunday 24/05/2015</strong></li>
+<li><strong>Full day</strong></li>
+</ul>
+
+<p>Early morning departure towards the city of Iguazu, arrival to the National Park, declared one of the 7 Natural Wonders of the World and "Outstanding Universal Value" by UNESCO. Throughout the morning and part of the afternoon, crossing the Lower and Upper circuits and Garganta del Diablo (recently enabled), will visit the impressive waterfalls surrounded by lush tropical jungle, always accompanied by a park guide, there will also be part of the travel with the wonderful jungle train and have time available for those wishing to make a boat excursion to below the falls (optional).</p>
+
+<p>At noon, there will be time for lunch (not included) and around 15 hours, we depart for Wanda to visit one of the famous resorts of semi precious stones.</p>
+
+<p>Snack on the way back is included.</p>
+
+<p>Value of the trip per person: <strong>$ 719</strong>, up to 3 payments without interest. Discount for cash payments <strong>$ 625</strong></p>
+
+<ul>
+<li>Link of interest: www.iguazuargentina.com</li>
+</ul>
+
+<div style="text-align:center">
+    <img src ="https://raw.githubusercontent.com/scipy-latinamerica/scipyla2015/master/tours/imgs/iguazu.gif" /><br>
+    <small>Iguazu Falls</small>
+</div>
+
+<p>Minimum amount to reserve places $ 150.-</p>
+
+<p>It is recommended to bring a change of clothes, in case of wet in any of the watterfalls in the park.</p>
+
+<p>Tickets not included. Minimum of 15 people to depart.</p>
+</p>
+            </div>
+        
+            <div class="tab-pane " id="1es">
+                <p><h1>Excursiones</h1>
+
+<p><strong>Aclaración: Esta página fue desarrollada a modo informativo. Bajo ningún
+concepto la organización ni la universidad se hacen
+responsables por contratiempos relacionados con los alojamientos.
+La información vertida en esta guía puede cambiar por las fluctuaciones
+cambiarias o cambios en tarifas de las empresas.</strong></p>
+
+<p>A pedido de la organización, la empresa
+<strong>Guarani Turismo</strong> (<a href="http://guaraniturismo.tur.ar/">http://guaraniturismo.tur.ar/</a>) ofrecerá diferentes alternativas
+de visitas a zonas turísticas partiendo desde la ciudad Posadas**.</p>
+
+<div style="text-align:center">
+    <a href="http://guaraniturismo.tur.ar/" target="_blank">
+        <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/hotels/imgs/guarani.png" />
+    </a><br>
+    Bolívar 1618<br>
+    Posadas – Misiones – Argentina<br>
+    <a href="mailto:info@guaraniturismo.tur.ar">info@guaraniturismo.tur.ar</a><br>
+    Tel. +54 (0376) 4433308 / 4426292
+</div>
+
+<h2>Procedimiento para reservar Lugar en en alguno de los dos tours</h2>
+
+<ul>
+<li>Enviar un email con la consulta o pedido de información a
+<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;:&#x64;&#97;&#x6e;&#x69;&#101;&#x6c;&#x40;gu&#97;&#114;&#x61;&#110;&#105;&#x74;&#x75;&#114;&#x69;&#x73;&#x6d;&#x6f;&#x2e;&#116;u&#x72;&#46;&#97;&#114;">&#x64;&#97;&#x6e;&#x69;&#101;&#x6c;&#x40;gu&#97;&#114;&#x61;&#110;&#105;&#x74;&#x75;&#114;&#x69;&#x73;&#x6d;&#x6f;&#x2e;&#116;u&#x72;&#46;&#97;&#114;</a> /
+<a href="m&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x61;&#110;&#100;r&#97;&#x40;&#x67;&#x75;&#x61;&#x72;a&#x6e;&#x69;&#x74;&#x75;&#x72;&#x69;&#115;&#x6d;&#x6f;&#x2e;&#x74;u&#x72;&#46;&#x61;&#114;">&#x73;&#x61;&#110;&#100;r&#97;&#x40;&#x67;&#x75;&#x61;&#x72;a&#x6e;&#x69;&#x74;&#x75;&#x72;&#x69;&#115;&#x6d;&#x6f;&#x2e;&#x74;u&#x72;&#46;&#x61;&#114;</a></li>
+<li>Detallar cantidad de personas y noches a alojarse, antes de abonar se
+confirmará por email la reserva solicitada.</li>
+</ul>
+
+<p><strong>Formas de pago:</strong> Efectivo, depósito bancario y/o pago con tarjeta de crédito.</p>
+
+<h2><strong>Dia Sábado:</strong> Ruinas de San Ignacio y Cruz de Santa Ana</h2>
+
+<ul>
+<li>Día <strong>sábado 23/05/15</strong></li>
+<li>Medio día por la <em>*tarde
+*</em></li>
+</ul>
+
+<p>Salida desde los hoteles para viajar unos 50 km hasta el Parque Temático de La
+Cruz ubicado en la ciudad de Santa Ana y sobre el cerro homónimo a 360 metros
+sobre el nivel del mar.</p>
+
+<p>Allí nos encontraremos con una imponente cruz de hierro de 84 metros y varios
+puntos panorámicos, inclusive se puede subir mediante elevador a los brazos
+(costo aparte) y tener una vista increíble sobre el monte nativo y la ciudad
+de Posadas.</p>
+
+<p>Además podremos apreciar dentro del complejo el orquideario, mariposario,
+senderos y restaurante.</p>
+
+<p>Luego partiremos hacia la ciudad de San Ignacio donde se localizan la Ruinas
+Jesuíticas más conocidas del país. Allí disfrutaremos de un paseo con guía por
+el sitio declarado Patrimonio de la Humanidad por la UNESCO, además, habrá
+tiempo libre para recorrer libremente el predio.</p>
+
+<p>Merienda en regreso incluida.</p>
+
+<p>Valor de la excursión por persona <strong>$ 339</strong> hasta en 3 pagos sin interés
+Descuento en efectivo <strong>$ 295</strong></p>
+
+<ul>
+<li>Link de interés: http://goo.gl/iZO497 - video youtube Cruz</li>
+<li>Link de interés: http://goo.gl/uYsy7q - video youtube Ruinas</li>
+</ul>
+
+<div style="text-align:center">
+    <img src ="https://raw.githubusercontent.com/scipy-latinamerica/scipyla2015/master/tours/imgs/si.jpg" /><br>
+    <small>Cruz de Santa Ana y Ruinas de San Ignacio</small>
+</div>
+
+<p>Monto mínimo para reservar lugares $100. Se recomienda llevar ropa cómoda.</p>
+
+<p>Entradas y ascensor a los brazos de la Cruz no incluidos. Mínimo de 15 personas para la salida</p>
+
+<h2><strong>Dia Domingo:</strong> Cataratas del Iguazú y Minas de Wanda</h2>
+
+<ul>
+<li>Día sugerido <strong>domingo 24/05/15</strong></li>
+<li><em>*Día completo
+*</em></li>
+</ul>
+
+<p>Salida temprano a la mañana hacia la ciudad de Iguazu y llegada al Parque
+Nacional, declarado una de las 7 Maravillas Naturales del Mundo y por la
+UNESCO como Valor Universal Excepcional. Durante toda la mañana y parte de la
+tarde recorreremos los circuitos Inferior, Superior y Garganta del Diablo
+(recientemente habilitado), conoceremos los imponentes saltos rodeados de la
+exuberante selva tropical, siempre acompañados por un guía del parque, también
+se hará parte del recorrido con el maravilloso tren de la selva y habrá tiempo
+para quienes deseen hacer una excursión en lancha hasta debajo de los saltos
+(opcional).</p>
+
+<p>Al mediodía habrá tiempo para almorzar (no incluido) y alrededor de las 15 hs
+partiremos a Wanda para visitar uno de sus famosos complejos de piedras
+semi preciosas.</p>
+
+<p>Merienda en regreso incluida.</p>
+
+<p>Valor de la excursión por persona <strong>$ 719</strong> hasta en 3 pagos sin interés
+Descuento en efectivo <strong>$ 625</strong></p>
+
+<ul>
+<li>Link de interés: www.iguazuargentina.com</li>
+</ul>
+
+<div style="text-align:center">
+    <img src ="https://raw.githubusercontent.com/scipy-latinamerica/scipyla2015/master/tours/imgs/iguazu.gif" /><br>
+    <small>Cataratas del Iguazú</small>
+</div>
+
+<p>Monto mínimo para reservar lugares $ 150.-</p>
+
+<p>Se recomienda llevar una muda de ropa en caso de mojarse en alguno de los
+saltos del Parque.</p>
+
+<p>Entradas no incluidas. Mínimo de 15 personas para la salida</p>
+</p>
+            </div>
+        
+            <div class="tab-pane " id="2pt">
+                <p><h1>Excursões</h1>
+
+<p><strong>Esclarecimento: Esta página foi desenvolvida em caráter informativo. Sob nenhuma
+circunstância nem a organização nem a universidade se fazem
+responsáveis por contratempos relacionados aos alojamentos.
+A informação encontrada nesse guia pode mudar por conta das flutuações
+cambiais ou mudanças nas tarifas das empresas.</strong></p>
+
+<p>A pedido da organização, a empresa
+<strong>Guarani Turismo</strong> (<a href="http://guaraniturismo.tur.ar/">http://guaraniturismo.tur.ar/</a>) oferecerá diferentes alternativas
+de visitas a zonas turísticas partindo da cidade de Posadas**.</p>
+
+<div style="text-align:center">
+    <a href="http://guaraniturismo.tur.ar/" target="_blank">
+        <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/hotels/imgs/guarani.png" />
+    </a><br>
+    Bolívar 1618<br>
+    Posadas – Misiones – Argentina<br>
+    <a href="mailto:info@guaraniturismo.tur.ar">info@guaraniturismo.tur.ar</a><br>
+    Tel. +54 (0376) 4433308 / 4426292
+</div>
+
+<h2>Procedimiento para reservar lugar nos passeios</h2>
+
+<ul>
+<li>Enviar um email com pedido de informação para
+<a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#100;&#x61;&#x6e;&#x69;&#x65;l&#x40;&#103;&#x75;&#97;&#114;&#x61;&#110;&#x69;&#x74;&#x75;&#x72;&#105;s&#109;&#111;&#46;&#116;&#x75;&#x72;&#x2e;&#97;&#114;">&#100;&#x61;&#x6e;&#x69;&#x65;l&#x40;&#103;&#x75;&#97;&#114;&#x61;&#110;&#x69;&#x74;&#x75;&#x72;&#105;s&#109;&#111;&#46;&#116;&#x75;&#x72;&#x2e;&#97;&#114;</a> /
+<a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#115;&#x61;&#x6e;&#100;&#x72;&#97;&#x40;&#103;&#x75;&#97;r&#x61;&#x6e;&#105;&#116;u&#x72;&#105;&#x73;&#x6d;&#x6f;&#46;&#x74;u&#x72;&#46;&#x61;&#114;">&#115;&#x61;&#x6e;&#100;&#x72;&#97;&#x40;&#103;&#x75;&#97;r&#x61;&#x6e;&#105;&#116;u&#x72;&#105;&#x73;&#x6d;&#x6f;&#46;&#x74;u&#x72;&#46;&#x61;&#114;</a></li>
+<li>Detalhar a quantidade de pessoas e noites antes de pagar e
+confirmar por e-mail a reserva solicitada.</li>
+</ul>
+
+<p><strong>Formas de pagamento:</strong> Dinheiro, depósito bancário ou cartão de crédito.</p>
+
+<h2><strong>Sábado:</strong> Ruinas de San Ignacio e Cruz de Santa Ana</h2>
+
+<ul>
+<li>Día <strong>sábado 23/05/15</strong></li>
+<li>Meio-dia para a <em>*tarde
+*</em></li>
+</ul>
+
+<p>Saída dos hotéis para viajar uns 50 km até o Parque Temático de La
+Cruz localizado na cidade de Santa Ana sobre a serra homónima a 360 metros
+do nível do mar.</p>
+
+<p>Ali encontraremos uma imponente cruz de ferro de 84 metros e vários
+pontos panorâmicos, inclusive é possível subir via elevador aos braços
+(custo separado) e ter uma vista incrível sobre o monte nativo da cidade
+de Posadas.</p>
+
+<p>Além disso podemos aprecisar no complexo o orquidário, mariposário,
+trilhas e restaurante.</p>
+
+<p>Logo partiremos até a cidade de San Ignacio onde se localizam as Ruinas
+Jesuíticas mais conhecidas do país. Ali desfrutaremos de um passeio com guia pelo
+sítio declarado Patrimônio da Humanidade pela UNESCO, e também, haverá
+tempo livre para passear livremente pelo prédio.</p>
+
+<p>Lanche no retorno incluído.</p>
+
+<p>Valor da excursão por pessoa <strong>$ 339</strong> em até 3 vezes sem juros
+Valor a vista <strong>$ 295</strong></p>
+
+<ul>
+<li>Link de interesse: http://goo.gl/iZO497 - video youtube Cruz</li>
+<li>Link de interesse: http://goo.gl/uYsy7q - video youtube Ruinas</li>
+</ul>
+
+<div style="text-align:center">
+    <img src ="https://raw.githubusercontent.com/scipy-latinamerica/scipyla2015/master/tours/imgs/si.jpg" /><br>
+    <small>Cruz de Santa Ana y Ruinas de San Ignacio</small>
+</div>
+
+<p>Valor mínimo para reservas $100. Recomendá-se usar roupas leves.</p>
+
+<p>Entradas e subida aos braços da Cruz não incluídos. Mínimo de 15 pessoas para saída.</p>
+
+<h2><strong>Domingo:</strong> Cataratas de Iguazú y Minas de Wanda</h2>
+
+<ul>
+<li>Dia sugerido <strong>domingo 24/05/15</strong></li>
+<li><em>*Dia completo
+*</em></li>
+</ul>
+
+<p>Saída no início da manhã até a cidade de Iguazu e chegada ao Parque
+Nacional, declarado uma das 7 Maravilhas Naturais do Mundo pela
+UNESCO com Valor Universal Excepcional. Durante toda manhã e parte da
+tarde viajaremos aos circuitos Inferior, Superior y Garganta do Diabo
+(recentemente habilitado), conheceremos os imponentes saltos rodeados de
+exuberante selva tropical, sempre acompanhados por um guia do parque, também
+haverá parte do passeio com o maravilhoso trem da selva e mais tempo
+para quem quiser fazer uma excursão via lancha para debaixo das quedas
+(opcional).</p>
+
+<p>Ao meio-dia haverá tempo para almoço (não incluído) e por volta das 15h
+partiremos a Wanda para visitar um de seus famosos complexos de pedras
+semi-preciosas.</p>
+
+<p>Lanche no regresso incluído.</p>
+
+<p>Valor da excursão por persona <strong>$ 719</strong> em até 3 vezes sem juros
+Valor com desconto a vista <strong>$ 625</strong></p>
+
+<ul>
+<li>Link de interesse: www.iguazuargentina.com</li>
+</ul>
+
+<div style="text-align:center">
+    <img src ="https://raw.githubusercontent.com/scipy-latinamerica/scipyla2015/master/tours/imgs/iguazu.gif" /><br>
+    <small>Cataratas do Iguazú</small>
+</div>
+
+<p>Montante mínimo para reservar lugares $ 150.-</p>
+
+<p>Recomenda-se levar uma muda de roupa caso molhe-se em alguns dos
+saltos do Parque.</p>
+
+<p>Entradas não incluídas. Mínimo de 15 pessoas para a saída.</p>
+</p>
+            </div>
+        
+    </div>
+</div>
+
+            
+        </div>
+
+        
+        <div class="span3">
+            
+			<a href="http://www.accuweather.com/en/ar/posadas/5168/weather-forecast/5168" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+-->
+</a><div id="awcc1431216046420" class="aw-widget-current"  data-locationkey="5168" data-unit="c" data-language="es" data-useip="false" data-uid="awcc1431216046420"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+			
+			<div class="alert alert-error center">
+				<h3>
+					Conference Map
+				</h3>
+				<p class="center">
+						<a target="_blank" href="https://www.google.com.ar/maps/@-27.3811201,-55.9120811,13z/data=!4m2!6m1!1sz-qVL_LgL1X4.kwcNWI5-iBdI">
+					<img src="../2015/static/maps.png" />
+				</a>
+				</p>
+				<small>Airport, Bus Stations, Restaurants, Hotels, ATM, Tourism and More</small>
+			</div>
+			
+			<p class="text-center center alert alert-success">
+				<Strong>More About the Venue:</strong><br> 
+				<a href="../venue.html">The City</a>, 
+				<a href="traveling.html">Travel to Posadas</a>, 
+				<a href="accomodation.html">Accommodations</a>,
+				<a href="tours.html">Excursions</a>
+			</p>
+			
+			
+            
+                  
+                  
+                     <h3>Organizer</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://scipyla.org" title="SciPy Latin America (Organizer)"><img alt="SciPy Latin America" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8c5eaa0efe34a9eb.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://www.ugd.edu.ar/" title="Universidad Gastón Dachary (Organizer)"><img alt="Universidad Gastón Dachary" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8fb55c8f96c79ad1.7567642e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Diamond</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://www.machinalis.com/" title="Machinalis (Diamond)"><img alt="Machinalis" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8090f5aa0ca78034.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="https://www.python.org/psf/" title="Python Software Foundation (Diamond)"><img alt="Python Software Foundation" border="0" class="thumbnail" src="../fast_download/sponsor.logo.92cb3e222b54091e.7073662e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Gold</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://github.com" title="GitHub (Gold)"><img alt="GitHub" border="0" class="thumbnail" src="../fast_download/sponsor.logo.b73973ab7a86f6e3.6769746875622e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                  
+                  
+                     <h3>Bronze</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="https://www.enthought.com/" title="Enthought Scientific Computing Solutions (Bronze)"><img alt="Enthought Scientific Computing Solutions" border="0" class="thumbnail" src="../fast_download/sponsor.logo.87b2306a87e9633c.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Institutional Endorsement</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://huayra.conectarigualdad.gob.ar/" title="Huayra - GNU Linux (Institutional Endorsement)"><img alt="Huayra - GNU Linux" border="0" class="thumbnail" src="../fast_download/sponsor.logo.9a12f06e292fb0b8.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://www.conectarigualdad.gob.ar/" title="Conectar Igualdad (Institutional Endorsement)"><img alt="Conectar Igualdad" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8ae2f0c8630b75f3.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Specials Thanks</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="https://www.jetbrains.com/pycharm/" title="PyCharm - by JetBrains (Specials Thanks)"><img alt="PyCharm - by JetBrains" border="0" class="thumbnail" src="../fast_download/sponsor.logo.af4928405caa0fcd.6a65742e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                  
+                  
+                     <h3>Adherent</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://elblogdehumitos.com.ar/pages/argentina-en-python/" title="Argentina en Python (Adherent)"><img alt="Argentina en Python" border="0" class="thumbnail" src="../fast_download/sponsor.logo.a357b360f373ec85.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://www.misol.org.ar/" title="MiSoL - Misiones Software Libre (Adherent)"><img alt="MiSoL - Misiones Software Libre" border="0" class="thumbnail" src="../fast_download/sponsor.logo.81e474e18ea7b167.6a65742e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://argentina.pyladies.com/" title="pyladies Argentina (Adherent)"><img alt="pyladies Argentina" border="0" class="thumbnail" src="../fast_download/sponsor.logo.a76607472839c3a9.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://pybonacci.org/" title="Juan Luis Cano contacto@pybonacci.org (Adherent)"><img alt="Juan Luis Cano contacto@pybonacci.org" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8317e820b2e4c3b5.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://guaraniturismo.tur.ar/" title="Guaraní Turismo (Adherent)"><img alt="Guaraní Turismo" border="0" class="thumbnail" src="../fast_download/sponsor.logo.9f86463e23ff81c2.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+              
+            
+        </div>
+        
+    </section><!--/main-->
+
+    <!-- Footer ================================================== -->
+    <div class="row">
+        <footer class="footer span12" id="footer">
+            <div class="footer-content">
+                 <!-- this is default footer -->
+                <div class="copyright pull-left">Python Scientific Conference 2015 Misiones, Argentina</div>
+                <div id="poweredBy" class="pull-right">
+                    Built using
+                    <a href="../default/about.html">web2conf</a>
+                    Powered by
+                    <a href="http://www.web2py.com/">web2py</a>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+
+  </div> <!-- /container -->
+
+  <!-- The javascript =============================================
+       (Placed at the end of the document so the pages load faster) -->
+  <script src="../2015/static/js/bootstrap.min.js"></script>
+  <script src="../2015/static/js/web2py_bootstrap.js"></script>
+  <!--[if lt IE 7 ]>
+      <script src="/2015/static/js/dd_belatedpng.js"></script>
+      <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+      <![endif]-->
+
+  
+  <script src="../2015/static/js/share.js%3Fstatic=%252F2015%252Fstatic%252Fimages"></script>
+</body>
+</html>
