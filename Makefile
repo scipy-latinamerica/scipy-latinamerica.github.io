@@ -69,4 +69,6 @@ linkcheck:
 
 publish: html
 	ghp-import -m "Generate ScipyLaTam site" -b $(GITHUB_PAGES_BRANCH) $(BUILDDIR)/html -c ${CNAME}
+	git add -A .
+	git push
 	git push -u --force origin $(GITHUB_PAGES_BRANCH)
