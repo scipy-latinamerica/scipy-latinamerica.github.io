@@ -7,6 +7,10 @@ SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build
 
+GITHUB_PAGES_BRANCH=master
+
+CNAME=www.scipyla.org
+
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
 $(error The '$(SPHINXBUILD)' command was not found. Make sure you have Sphinx installed, then set the SPHINXBUILD environment variable to point to the full path of the '$(SPHINXBUILD)' executable. Alternatively you can add the directory with the executable to your PATH. If you don't have Sphinx installed, grab it from http://sphinx-doc.org/)
@@ -39,6 +43,8 @@ html:
 	$(SPHINXBUILD) -b html $(SPHINXOPTS_ES) $(BUILDDIR)/html/es
 	$(SPHINXBUILD) -b html $(SPHINXOPTS_PT) $(BUILDDIR)/html/pt
 	cp source/index.html $(BUILDDIR)/html
+	cp README.md $(BUILDDIR)/html
+	mkdir -p $(BUILDDIR)/html/conf && cp -R confs_archive/* $(BUILDDIR)/html/conf
 	@echo
 	@echo "Build finished. The website is in $(BUILDDIR)/html."
 
@@ -60,3 +66,7 @@ linkcheck:
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 	      "or in $(BUILDDIR)/linkcheck/output.txt."
+
+publish: html
+	ghp-import -m "Generate ScipyLaTam site" -b $(GITHUB_PAGES_BRANCH) $(BUILDDIR)/html -c ${CNAME}
+	git push -u --force origin $(GITHUB_PAGES_BRANCH)

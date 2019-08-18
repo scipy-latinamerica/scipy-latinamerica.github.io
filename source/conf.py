@@ -12,7 +12,9 @@
 # serve to show the default.
 
 import sphinx_bootstrap_theme
-import sys, os, urllib
+import sys, os
+
+from six.moves import urllib
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -306,7 +308,7 @@ terms = []
 for term in data.GOOGLE_NEWS_SEARCH_TERMS:
     term = term.strip()
     if term:
-        terms.append(urllib.quote_plus(term.encode("utf8")))
+        terms.append(urllib.parse.quote_plus(term.encode("utf8")))
 rss.append((
     data.NEWS_FOR_FEED * len(terms),
     GOOGLE_NEWS_TEMPLATE.format("+".join(terms))

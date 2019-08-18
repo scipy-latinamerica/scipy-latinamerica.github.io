@@ -1,0 +1,12 @@
+#masthead H1 {
+    padding-left: 180px;
+    padding-top: 43px;
+    padding-bottom: 24px;
+    background-repeat: no-repeat;
+    background-image: url('../img/scipycon_logo.png')
+}
+
+H1, H2, P, .nav, .container {
+    font-family: 'Nunito';
+
+}

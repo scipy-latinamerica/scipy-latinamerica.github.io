@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]><html class="ie ie6 ie-lte9 ie-lte8 ie-lte7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7 ie-lte9 ie-lte8 ie-lte7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8 ie-lte9 ie-lte8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="ie9 ie-lte9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+  <!-- Always force latest IE rendering engine
+       (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <![endif]-->
+
+  <title>SciPy Latin America 2015</title>
+
+  <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+  <meta name="application-name" content="2015" />
+
+  <!-- Speaking of Google, don't forget to set your site up:
+       http://google.com/webmasters -->
+  <meta name="google-site-verification" content="" />
+
+  <!--  Mobile Viewport Fix
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+        device-width: Occupy full width of the screen in its current orientation
+        initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+        user-scalable = yes allows the user to zoom in -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="../2015/static/favicon.ico%3Fv=1" type="image/x-icon">
+  <link rel="apple-touch-icon" href="http://conf.scipyla.org/2015/static/favicon.png">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables
+       HTML5 elements & feature detects -->
+  <script src="../2015/static/js/modernizr.custom.js"></script>
+
+  <!-- include stylesheets -->
+	<span id="scrap-style">
+  
+
+  <script type="text/javascript"><!--
+    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).
+    var w2p_ajax_confirm_message = "Are you sure you want to delete this object?";
+    var w2p_ajax_date_format = "%Y-%m-%d";
+    var w2p_ajax_datetime_format = "%Y-%m-%d %H:%M:%S";
+    var ajax_error_500 = 'An error occured, please <a href="/venue/traveling">reload</a> the page'
+    //--></script>
+
+<script src="../2015/static/js/jquery.js" type="text/javascript"></script><link href="../2015/static/css/calendar.css" rel="stylesheet" type="text/css" /><script src="../2015/static/js/calendar.js" type="text/javascript"></script><script src="../2015/static/js/web2py.js" type="text/javascript"></script><link href="../2015/static/css/web2py.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" /><link href="../2015/static/css/web2py_bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+  
+		</span>
+
+  <!-- uncomment here to load jquery-ui
+       <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
+       <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+       uncomment to load jquery-ui //-->
+  <noscript><link href="../2015/static/css/web2py_bootstrap_nojs.css" rel="stylesheet" type="text/css" /></noscript>
+  
+</head>
+
+<body>
+  <!-- Navbar ================================================== -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="flash"></div>
+    <div class="navbar-inner">
+      <div class="container">
+        <!-- the next tag is necessary for bootstrap menus, do not remove -->
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+	
+        <ul id="navbar" class="nav pull-right"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="traveling.html#" rel="nofollow">Log In</a><ul class="dropdown-menu"><li><a href="../user/register%3F_next=%252Fvenue%252Ftraveling.html" rel="nofollow"><i class="icon icon-user glyphicon glyphicon-user"></i> Sign Up</a></li><li><a href="../user/request_reset_password%3F_next=%252Fvenue%252Ftraveling.html" rel="nofollow"><i class="icon icon-lock glyphicon glyphicon-lock"></i> Lost password?</a></li><li class="divider"></li><li><a href="../user/login%3F_next=%252Fvenue%252Ftraveling.html" rel="nofollow"><i class="icon icon-off glyphicon glyphicon-off"></i> Log In</a></li></ul></li></ul>
+        <div class="nav-collapse">
+          
+          
+          <ul class="nav"><li class="web2py-menu-first"><a href="../index.html">Home</a></li><li><a href="../user/register.html">Register</a></li><li><a href="../event/press.html">Press</a></li><li><a href="../event/code_of_conduct.html">Code of Conduct</a></li><li class="dropdown"><a href="traveling.html#" onclick="javascript:void(0);return false;">Sponsors</a><ul class="dropdown-menu"><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_en.pdf?raw=true">English (PDF)</a></li><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_es.pdf?raw=true">Español (PDF)</a></li><li><a href="https://github.com/scipy-latinamerica/scipyla2015/blob/master/sponsor_prospectus/sponsors_pt.pdf?raw=true">Português (PDF)</a></li></ul></li><li><a href="../activity/teen_track.html">Teen Track</a></li><li><a href="../activity.1.html">Proposals</a></li><li class="web2py-menu-last"><a href="../schedule.html">Schedule</a></li></ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div><!--/top navbar -->
+
+  <div class="container">
+    <!-- Masthead ================================================== -->
+    <header class="mastheader row" id="header">
+        <div class="span12">
+            <div class="page-header">
+                <h1 style="color: #333333;">
+                    <img src="../2015/static/scipyla.png" />
+                    SciPy Latin America 2015
+                    <small>May 20-22 Posadas, Misiones, Argentina</small>
+                </h1>
+                <small class="pull-right">
+                    <strong>Previous Editions: </strong>
+                    <a target="_blank" href="http://www.scipyla.org/conf/2014/">2014</a>,
+                    <a target="_blank" href="http://www.scipyla.org/conf/2013/">2013</a>
+                </small>
+            </div>
+        </div>
+    </header>
+
+    <section id="main" class="main row">
+
+        <div class="span9">
+            
+            
+
+<div id="content">
+<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+    
+    <li class=" active ">
+        <a href="traveling.html#0en" data-toggle="tab">English</a>
+    </li>
+    
+    <li class="">
+        <a href="traveling.html#1es" data-toggle="tab">Español</a>
+    </li>
+    
+    <li class="">
+        <a href="traveling.html#2pt" data-toggle="tab">Português</a>
+    </li>
+    
+</ul>
+    <div id="my-tab-content" class="tab-content">
+        
+            <div class="tab-pane  active " id="0en">
+                <p><h1>Advice for Travelers</h1>
+
+<p>SciPy Latin America 2015, the third annual conference of Scientific Computing with Python will be held between <strong>May 20-22 in the city of Posadas, Misiones, Argentina.</strong></p>
+
+<p>The conference venue will be at the Universidad Gastón Dachary (<a href="http://www.ugd.edu.ar/">http://www.ugd.edu.ar/</a>), at the intersection of Salta and Columbus streets.</p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/ugd.jpg" />
+    <br/>Universidad Gastón Dachary
+</div>
+
+<p>There are several alternatives to get to the city and the university. Here are some alternatives for short, medium and long distance and urban transport are listed to get to the conference.</p>
+
+<p><strong>Disclaimer: The information below are suggestions to guide the attendees to the location. Under no circumstances the organization and the university are responsible for mishaps about the travel and the chosen of transportation. The information and statements contained in this guide may change by exchange rate fluctuations or changes in itinerary companies.</strong></p>
+
+<h2>From Brazil</h2>
+
+<h3>Flights</h3>
+
+<p>The best alternative: Fly to Foz do Iguacu, cross the border and take a bus from Puerto Iguazu to Posadas.</p>
+
+<p><a href="http://www.decolar.com/">http://www.decolar.com/</a> o <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> to check flight costs.</p>
+
+<p>There are several daily flights connecting Sao Paulo and Rio de Janeiro to Foz do Iguaçu, located about 300 km from the city of Posadas.</p>
+
+<p><em>Gol Linhas Aereas</em> (<a href="http://voegol.com">http://voegol.com</a>), <em>Azul Linhas Aerea</em> 
+(<a href="http://voeazul.com">http://voeazul.com</a>) and <em>TAM</em> (<a href="http://tam.com.br">http://tam.com.br</a>) are some of the airlines that operate those routes.</p>
+
+<p>From the Airport of Foz do Iguaçu, you may take a local bus to the terminal of the city, and then take the international bus that crosses the border into Argentina. Note that international bus does not enter the premises of the terminal, but you have to take it on an adjacent side street.</p>
+
+<p>There are two Argentine buses companies doing international service and usually operate from 7:00 AM to about 6 PM. The fare is around <strong>U$S 3</strong>.</p>
+
+<p>Another option, due to the location of the airport of Foz do Iguaçu, is to take a bus or taxi from the airport to the bridgehead of Tancredo Neves International Bridge and wait there for the international bus (thus avoiding the delay of the way to the local terminal, in Foz do Iguaçu, located in downtown).</p>
+
+<p>After crossing the border, international bus goes to the bus station in Puerto Iguazú, Misiones, Argentina. At the same place you can take a bus to middle distance to the city of Posadas, capital of the province, at an approximate cost of <strong>U$S 18</strong>. Depending on the company, the journey takes about 5 hours.</p>
+
+<p>Please note that it is important to take the buses <strong>EXPRESO</strong> or
+<strong>DIRECTOS</strong> since the other can take many more hours.</p>
+
+<p>For more information, see: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a>,
+<a href="http://www.tigreiguazu.com.ar/">http://www.tigreiguazu.com.ar/</a> or <a href="http://www.crucerodelnorte.com.ar/">http://www.crucerodelnorte.com.ar/</a></p>
+
+<h3>Bus</h3>
+
+<p>There are also long-distance bus services that travel to the city of Posadas, starting from Sao Paulo, Rio de Janeiro and Florianopolis. The company Crucero del Norte/Sur (<a href="http://www.crucerodelnorte.com.ar/">http://www.crucerodelnorte.com.ar/</a>) is highlighted for these transfers.</p>
+
+<p>For more information, see: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a>.</p>
+
+<h2>How to get from Buenos Aires to Posadas</h2>
+
+<p>A very typical case is to arrive from other countries to Ezeiza International Airport. Once arrived in the country, if you want to go to Posadas by bus, you need to go to the <strong>Retiro bus terminal</strong>; and if you want to go by plane, you will need to go to <strong>Jorge Newbery Airport (Aeroparque)</strong>. In both cases, we recommend taking a bus of the company Tienda León (<a href="http://www.tiendaleon.com/home/">http://www.tiendaleon.com/home/</a>), at a cost of <strong>U$S 16</strong> to go to Aeroparque or <strong>U$S 7</strong> to go to Retiro.</p>
+
+<h3>Flights</h3>
+
+<p>The flights to Posadas depart from Jorge Newbery Airport (Aeroparque) at various times with an approximate cost of <strong>U$S 146</strong>.</p>
+
+<p>For more information, see: <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> or <a href="http://www.decolar.com/">http://www.decolar.com/</a></p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/aeroparque.jpg" />
+    <br/>Jorge Newbery Airport (Aeroparque)
+</div>
+
+<h3>Bus</h3>
+
+<p>There are many ways to travel from Buenos Aires to Posadas, being the most important starting point Retiro Station. The cost of a ticket to a service bed and onboard food is <strong>U$S 65</strong> (there are several alternatives in price and service) and has a duration of <strong>12 hours</strong>.</p>
+
+<p>For more information, see: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h2>Private car</h2>
+
+<p>We recommend the following route (the route has tolls):</p>
+
+<ul>
+<li>Go for <em>Ruta Nacional 9</em> until joining with the <em>Ruta Provincial 6</em> and cross the bridge Zárate - Brazo Largo.</li>
+<li>Go for <em>Route 14</em> until joining, already in Misiones, with the <em>Ruta Provincial 105</em>.</li>
+</ul>
+
+<h1>From Cordoba to Posadas</h1>
+
+<h2>Flights</h2>
+
+<p>The flights, operated between the cities of Córdoba and Posadas, have a connection at the airport Jorge Newbery in Buenos Aires (Aeroparque). In addition, the section connecting Aeroparque with the "Posadas Airport" is frequented by few passengers and its cost is quite high (approximately <strong>U$S 250</strong>).</p>
+
+<p>For more information, see: <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> or
+<a href="http://www.decolar.com/">http://www.decolar.com/</a>.</p>
+
+<h2>Bus</h2>
+
+<p>The most important companies that connect these two locations are: Crucero del Norte (<a href="http://crucerodelnorte.com.ar">http://crucerodelnorte.com.ar</a>) and Zinger (<a href="http://expresosinger.com.ar/">http://expresosinger.com.ar/</a>). Both companies have different food service on board, and the journey lasting about <strong>16 hours</strong> and cost about <strong>U$S 115</strong>.</p>
+
+<p>For more information, see: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h2>Private car</h2>
+
+<p>We recommend the following route (the route has tolls):</p>
+
+<ul>
+<li>Take the <em>Ruta Nacional 19</em> which connects the city of Córdoba, Santa Fe Capital.</li>
+<li>Cross the city of Paraná (Entre Rios) by Subfluvial Tunnel.</li>
+<li>Go through the <em>Ruta Nacional 12</em> until joining with the <em>Ruta Provincial 127</em>.</li>
+<li>Continue along the <em>Ruta Provincial 127</em> until joining with the <em>Ruta Nacional 14</em>.</li>
+<li>Continue on the <em>Ruta Nacional 14</em> up to the Province of Misiones, to the junction with the <em>Provincial Ruta 105</em>.</li>
+<li>Continue along the <em>Ruta Provincial 105</em> until the city of Posadas</li>
+</ul>
+
+<h2>From Rosario to Posadas</h2>
+
+<h3>Flights</h3>
+
+<p>Because of the distance, it is convenient to take flights directly from Jorge Newbery Airport in Buenos Aires. For other alternatives, see: <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> or <a href="http://www.decolar.com/">http://www.decolar.com/</a></p>
+
+<h3>Bus</h3>
+
+<p><strong>U$S 92</strong> for the semi-bed service and <strong>U$S 105</strong> for the bed service, by the Río Uruguay.</p>
+
+<p>For more information, see: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h3>Private car</h3>
+
+<p>We recommend the following route (the route has tolls):</p>
+
+<ul>
+<li>Take the Rosario-Santa Fe highway.</li>
+<li>Cross to the city of Paraná (Entre Rios) by Subfluvial Tunnel.</li>
+<li>Go through the <em>Ruta Nacional 12</em> to the junction with <em>Ruta Provincial 127</em>.</li>
+<li>Continue on the <em>Ruta Provincial 127</em> until the junction with the <em>Ruta Nacional 14</em>.</li>
+<li>Continue on the <em>Ruta Nacional 14</em> up to the Province of Misiones, to the junction the <em>Ruta Nacional 105</em>.</li>
+<li>Continue onto <em>Ruta Provincial 105</em> until the city of Posadas.</li>
+</ul>
+
+<h2>Urban Transport System of the city of Posadas</h2>
+
+<h3>Bus station long distance -> Universidad Gastón Dachary</h3>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/posadas_terminal.jpg" />
+    <br/>Bus Terminal of Posadas
+</div>
+
+<ul>
+<li><p><strong>Taxi</strong></p>
+
+<p>You can take a taxi directly from the Bus Station to get to university at an approximate cost of <em>*U$S 7 *</em>.</p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/taxi.jpeg" />
+    <br/>Taxi of Posadas
+</div></li>
+<li><p><strong>Urban Bus - Line 14B</strong></p>
+
+<p>Frequency: every X minutes</p>
+
+<p>Cost: <strong>U$S 1</strong></p>
+
+<p>Tour: Avenida Santa Catalina, Avenida Comandante Andresito, Avenida Lavalle, Avenida Chacabuco, Avenida Francisco de Haro, Avenida Mitre, Buenos Aires street. Get off at Tucumán street.</p></li>
+<li><p><strong>Urban Bus - Line 15A</strong></p>
+
+<p>Frequency: every X minutes</p>
+
+<p>Cost: <strong>U$S 1</strong></p>
+
+<p>Tour: Avenida Santa Catalina, Santa Cruz Avenue, Avenida Lavalle, Avenida López y Planes, Avenida Mitre, Ayacucho street. Get off at Tucumán street.</p></li>
+</ul>
+
+<p>More information about the tours:
+<a href="http://www.argentino.com.ar/posadas/recorridos+de+colectivos">http://www.argentino.com.ar/posadas/recorridos+de+colectivos</a></p>
+
+<h3>Airport -> Universidad Gastón Dachary</h3>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/posadas_airport.jpg" />
+    <br/>Airport of Posadas
+</div>
+
+<ul>
+<li><p><strong>Taxi</strong></p>
+
+<p>They can take a taxi directly from the airport to go to the university, for an approximate cost of <strong>U$S 10</strong></p></li>
+<li><p><strong>Urban Bus - Line 28</strong></p>
+
+<p>Frequency: every 30 minutes</p>
+
+<p>Fee: <strong>U$S 1</strong></p>
+
+<p>Tour: West access to RN 12, Avenida San Martin to Avenida Lopez y Planes, Avenida Corrientes to Santa Fe. Get off at San Lorenzo or Buenos Aires street.</p></li>
+</ul>
+</p>
+            </div>
+        
+            <div class="tab-pane " id="1es">
+                <p><h1>Consejos al Viajero</h1>
+
+<p>SciPy Latin America 2015, la tercera conferencia anual de Computación
+Científica con Python se realizará entre los días <strong>20-22 de mayo en la ciudad
+de Posadas, Misiones, Argentina.</strong></p>
+
+<p>La sede de la conferencia será la Universidad Gastón Dachary
+(<a href="http://www.ugd.edu.ar/">http://www.ugd.edu.ar/</a>), en la intersección de las calles Salta y Colón.</p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/ugd.jpg" />
+    <br/>Universidad Gastón Dachary
+</div>
+
+<p>Para llegar a la ciudad y la universidad se poseen varias alternativas. A
+continuación se listan algunas alternativas de corta, media y larga distancia,
+así como transporte urbano para llegar a la conferencia.</p>
+
+<p><strong>Aclaración: Todo a continuación son sugerencias para guiar al asistente hacia
+la sede. Bajo ningún concepto la organización ni la universidad se hacen
+responsables por contratiempos en la ruta y la forma de transporte elegida.
+La información vertida en esta guía puede cambiar por las fluctuaciones
+cambiarias o cambios en itinerario de las empresas.</strong></p>
+
+<h2>Desde Brasil</h2>
+
+<h3>Vuelos</h3>
+
+<p>La mejor alternativa: Volar hasta Foz do Iguazú, cruzar la frontera y tomar un
+bus desde Puerto Iguazu a Posadas.</p>
+
+<p><a href="http://www.decolar.com/">http://www.decolar.com/</a> o <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> para ver costos aéreos.</p>
+
+<p>Existen diversos vuelos diarios que conectan Sao Paulo y Río de Janeiro con
+Foz do Iguaçu, distante a unos 300 km de la ciudad de Posadas.</p>
+
+<p>Gol Linhas Aereas (<a href="http://voegol.com">http://voegol.com</a>), Azul Linhas Aerea 
+(<a href="http://voeazul.com">http://voeazul.com</a>) y TAM (<a href="http://tam.com.br">http://tam.com.br</a>) son algunas de las
+aerolíneas que operan esas rutas.</p>
+
+<p>Desde el Aeropuerto de Foz do Iguaçu, es posible tomar un colectivo urbano hasta
+la terminal de dicha ciudad y allí tomar el ómnibus internacional que realiza
+el cruce de la frontera hacia Argentina. Tener en cuenta que el colectivo
+internacional no ingresa al predio de la terminal, sino que hay que tomarlo en
+una calle lateral adyacente.</p>
+
+<p>Existen dos empresas de colectivos argentinas que realizan el servicio
+internacional y usualmente operan desde las 7:00 hasta alrededor de las 18:00.
+El costo del pasaje ronda los <strong>U$S 3</strong>.</p>
+
+<p>Otra opción, debido a la ubicación del aeropuerto de Foz do Iguçu, es tomar un colectivo o
+taxi desde la estación aérea hacia la cabecera del Puente Internacional
+Tancredo Neves y esperar allí el colectivo internacional (evitando así la
+demora del trayecto hasta la terminal urbana que se encuentra en el centro de
+la ciudad).</p>
+
+<p>Tras cruzar la frontera, el colectivo internacional llega hasta la Terminal de
+Ómnibus de Puerto Iguazú, Misiones, Argentina. En el mismo lugar, es posible
+tomar un colectivo de media distancia hacia la ciudad de Posadas, capital de la provincia, por un costo
+aproximado de <strong>U$S 18</strong>. Dependiendo de la empresa,
+al trayecto demora alrededor de 5 horas.</p>
+
+<p>Tengan en cuenta que es importante tomar los colectivos <strong>EXPRESO</strong> o 
+<strong>DIRECTOS</strong>, ya que los otros pueden demorar muchas horas más.</p>
+
+<p>Para más información, consultar: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a>,
+<a href="http://www.tigreiguazu.com.ar/">http://www.tigreiguazu.com.ar/</a> o <a href="http://www.crucerodelnorte.com.ar/">http://www.crucerodelnorte.com.ar/</a></p>
+
+<h3>Bus</h3>
+
+<p>También existen servicios de ómnibus de larga distancia que tienen como destino
+la ciudad de Posadas, partiendo desde Sao Paulo, Rio de Janeiro y Florianopolis.
+Se destaca la empresa Crucero del Norte/Sur para estos traslados
+(<a href="http://www.crucerodelnorte.com.ar/">http://www.crucerodelnorte.com.ar/</a>)</p>
+
+<p>Para más información, consultar: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h2>Como llegar desde Buenos Aires a Posadas</h2>
+
+<p>Un caso muy típico es llegar desde el exterior al Aeropuerto Internacional de
+Ezeiza. Una ves arribado al País si usted quiere dirigirse a Posadas por Bus
+tendrá que dirigirse a la <strong>terminal de ómnibus de Retiro</strong>; y si es por Avion
+tendrá que llegar al <strong>Aeropuerto Jorge Newbery (Aeroparque)</strong>. En ambos casos, 
+le recomendamos tomar un bus de la empresa <em>Tienda León</em>
+(<a href="http://www.tiendaleon.com/home/">http://www.tiendaleon.com/home/</a>) con un costo de <strong>U$S 16</strong> para llegar a
+Aeroparque y <strong>U$S 7</strong> para llegar a Retiro.</p>
+
+<h3>Vuelos</h3>
+
+<p>Los vuelos con destino a Posadas, parten del aeropuerto de Jorge Newbery
+(Aeroparque) en varios horarios por un costo aproximado de <strong>U$S 146</strong>.</p>
+
+<p>Para más información, consultar: <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> o
+<a href="http://www.decolar.com/">http://www.decolar.com/</a></p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/aeroparque.jpg" />
+    <br/>Aeropuerto Jorge Newbery (Aeroparque)
+</div>
+
+<h3>Bus</h3>
+
+<p>Hay muchas alternativas para viajar desde Buenos Aires a Posadas, siendo el
+punto de salida más importante la Estación de Retiro. El costo de un servicio
+cama con comida abordo es de <strong>U$S</strong> 65 (hay varias alternativas en precio y
+servicio) y tiene una duración aproximada de <strong>12 horas</strong>.</p>
+
+<p>Para más información, consultar: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h2>Automóvil Particular</h2>
+
+<p>Se recomienda la siguiente ruta (la ruta posee peajes):</p>
+
+<ul>
+<li>Dirigirse por Ruta Nacional 9 hasta empalmar la Ruta Provincial 6 y cruzar
+el puente Zárate - Brazo Largo.</li>
+<li>Dirigirse por la Ruta 14 hasta empalmar, ya en misiones, con la Ruta
+Provincial 105.</li>
+</ul>
+
+<h1>Como llegar de Córdoba a Posadas</h1>
+
+<h2>Vuelos</h2>
+
+<p>Los vuelos que unen las localidades de Córdoba y Posadas tienen una conexión en
+el Aeropuerto Jorge Newbery, en la ciudad de Buenos Aires (Aeroparque). Además
+de esto, el tramo que une Aeroparque con el Aeropuerto Posadas es de pocos
+pasajeros, con lo cual su costo es bastante elevado.
+(Aproximadamente <strong>U$S 250</strong>)</p>
+
+<p>Para más información, consultar: <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> o
+<a href="http://www.decolar.com/">http://www.decolar.com/</a></p>
+
+<h2>Bus</h2>
+
+<p>Las empresas más importantes que unen las dos localidades son Crucero del Norte
+(<a href="http://crucerodelnorte.com.ar">http://crucerodelnorte.com.ar</a>) y Zinger (<a href="http://expresosinger.com.ar/">http://expresosinger.com.ar/</a>).
+Ambas empresas cuentan con diferentes servicios de comida a bordo en un
+trayecto que dura unas <strong>16 horas</strong> por un costo de unos <strong>U$S 115.</strong></p>
+
+<p>Para más información, consultar: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h2>Automóvil Particular</h2>
+
+<p>Se recomienda la siguiente ruta (la ruta posee peajes):</p>
+
+<ul>
+<li>Tomar la Ruta Nacional 19 que une la ciudad de Córdoba con Santa Fé Capital</li>
+<li>Cruzar a la ciudad de Paraná (Entre Rios) por el túnel subfluvial.</li>
+<li>Dirigirse por la Ruta Nacional 12 hasta empalmar con la Ruta Provincial 127.</li>
+<li>Continuar con la Ruta Provincial 127 hasta empalmar con la Ruta Nacional 14.</li>
+<li>Continuar por la Ruta Nacional 14 hasta llegar a la Provincia de
+Misiones al  empalme con la Ruta Provincial 105.</li>
+<li>Continuar por la Ruta Provincial 105 hasta la ciudad de Posadas.</li>
+</ul>
+
+<h2>Como llegar de Rosario a Posadas</h2>
+
+<h3>Vuelos</h3>
+
+<p>Por la distancia, es conveniente tomar vuelos directamente desde el Aeropuerto
+Jorge Newbery de Buenos Aires. Para otras alternativas consultar:
+<a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> o <a href="http://www.decolar.com/">http://www.decolar.com/</a></p>
+
+<h3>Bus</h3>
+
+<p><strong>U$S 92</strong> semi cama y <strong>U$S 105</strong> el cama x Río Uruguay</p>
+
+<p>Para más información, consultar: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h3>Automóvil Particular</h3>
+
+<p>Se recomienda la siguiente ruta (la ruta posee peajes):</p>
+
+<ul>
+<li>Tomar la autopista Rosario-Santa Fe.</li>
+<li>Cruzar a la ciudad de Paraná (Entre Rios) por el túnel subfluvial.</li>
+<li>Dirigirse por la Ruta Nacional 12 hasta empalmar con la Ruta Provincial 127.</li>
+<li>Continuar con la Ruta Provincial 127 hasta empalmar con la Ruta Nacional 14.</li>
+<li>Continuar por la Ruta Nacional 14 hasta llegar a la Provincia de Misiones 
+al empalme con la Ruta Provincial 105.</li>
+<li>Continuar por la Ruta Provincial 105 hasta la ciudad de Posadas</li>
+</ul>
+
+<h2>Sistema de Transporte Urbano de Posadas</h2>
+
+<h3>Terminal de ómnibus de larga distancia -> Universidad Gastón Dachary</h3>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/posadas_terminal.jpg" />
+    <br/>Terminal de Ómnibus de Posadas
+</div>
+
+<ul>
+<li><p><strong>Taxi</strong></p>
+
+<p>Pueden tomarse un taxi directamente desde la terminal de ómnibus para
+llegar a la universidad por un costo aproximado de <strong>U$S 7</strong>.</p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/taxi.jpeg" />
+    <br/>Taxi de Posadas
+</div></li>
+<li><p><strong>Bus Urbano - Línea 14B</strong></p>
+
+<p>Frecuencia: cada X minutos</p>
+
+<p>Costo: <strong>U$S 1</strong></p>
+
+<p>Recorrido: Avenida Santa Catalina, Avenida Cte. Andresito, Avenida Lavalle, Avenida
+Chacabuco, Avenida F. de Haro, Avenida Mitre, Buenos Aires. Descender en la calle
+Tucumán</p></li>
+<li><p><strong>Bus Urbano - Línea 15A</strong></p>
+
+<p>Frecuencia: cada X minutos</p>
+
+<p>Costo: <strong>U$S 1</strong></p>
+
+<p>Recorrido: Avenida Santa Catalina, Av Santa Cruz, Avenida Lavalle, Avenida L. y
+Planes, Avenida Mitre, Ayacucho. Descender en la calle Tucumán</p></li>
+</ul>
+
+<p>Mas información de los Recorridos:
+<a href="http://www.argentino.com.ar/posadas/recorridos+de+colectivos">http://www.argentino.com.ar/posadas/recorridos+de+colectivos</a></p>
+
+<h3>Aeropuerto -> Universidad Gastón Dachary</h3>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/posadas_airport.jpg" />
+    <br/>Aeropuerto de Posadas
+</div>
+
+<ul>
+<li><p><strong>Taxi</strong></p>
+
+<p>Pueden tomarse un taxi directamente desde el aeropuerto  para llegar a la
+universidad por un costo aproximado de <strong>U$S 10</strong></p></li>
+<li><p><strong>Bus Urbano - Línea 28</strong></p>
+
+<p>Frecuencia: cada 30 minutos
+Tarifa: <strong>U$S 1</strong></p>
+
+<p>Recorrido: Acceso oeste hasta RN 12, Avenida San Martín hasta Avenida Lopez y
+Planes, Avenida Corrientes hasta Santa Fe. Descender en la calle San Lorenzo o
+Buenos Aires.</p></li>
+</ul>
+</p>
+            </div>
+        
+            <div class="tab-pane " id="2pt">
+                <p><h1>Conselhos ao Viajante</h1>
+
+<p>SciPy América Latina 2015, a terceira conferência anual de Computação
+Científica com Python, será realizada entre os dias <strong>20-22 de Maio na cidade
+de Posadas, Misiones, Argentina.</strong></p>
+
+<p>A sede da conferência será a Universidade Gastón Dachary,
+(<a href="http://www.ugd.edu.ar/">http://www.ugd.edu.ar/</a>), no cruzamento das ruas Salta y Colón da cidade.</p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/ugd.jpg" />
+    <br/>Universidad Gastón Dachary
+</div>
+
+<p>É possível chegar na cidade e na universidade de várias maneiras.
+A seguir encontra-se uma lista de algumas alternativas
+para trajetos de curta, média e longa distância,
+bem como sobre o transporte urbano para chegar à conferência.</p>
+
+<p><strong>AVISO: Todo o conteúdo a seguir são sugestões para guiar os participantes até a sede.
+Sob nenhuma circunstância a organização ou a universidade se fazem responsáveis
+por contratempos na rota ou na forma de transporte escolhida.
+A informação presente nesse guia pode ser alterada devido à alterações no câmbio
+ou alterações no itinerário das empresas.</strong></p>
+
+<h2>Partindo do Brasil</h2>
+
+<h3>Voos</h3>
+
+<p>A melhor alternativa é voar até Foz do Iguaçu, cruzar a fronteira
+e tomar um ônibus partindo de Puerto Iguazú até Posadas.</p>
+
+<p>Para os custos aéreos verificar
+<a href="http://www.decolar.com/">http://www.decolar.com/</a> ou <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a>.</p>
+
+<p>Existem vários voos diários conectando São Paulo e Rio de Janeiro
+à Foz do Iguaçu, que é distante, aproximadamente, 300km da cidade de Posadas.</p>
+
+<p>Gol (<a href="http://voegol.com">http://voegol.com</a>), Azul (<a href="http://voeazul.com">http://voeazul.com</a>)
+e TAM (<a href="http://tam.com.br">http://tam.com.br</a>) são algumas das companhias aéreas que operam essa
+rota.</p>
+
+<p>A partir do Aeroporto de Foz do Iguaçu é possível tomar um ônibus para o terminal da
+cidade, e, em seguida, tomar o ônibus internacional que cruza a fronteira para a
+Argentina. <strong>O ônibus internacional não entra nas instalações do
+terminal</strong> e por isso você tem que pegá-lo na rua lateral adjacente.</p>
+
+<p>Há duas empresas que realizam o serviço de cruzar a fronteira
+e geralmente operam a partir de 07:00 até cerca de 18:00.
+A tarifa custa cerca de US$3.</p>
+
+<p>Outra opção, devido à localização do aeroporto de Foz, é tomar um ônibus ou táxi
+da Estação Aérea até a cabeceira da Ponte Internacional Tancredo Neves, e esperar
+o ônibus internacional coletivo (evitando, assim, a longa viagem para o terminal
+localizado no centro da cidade).</p>
+
+<p>Depois de cruzar a fronteira, o coletivo internacional chega à estação de ônibus
+em Puerto Iguazú, Misiones, Argentina. No local você pode tomar um ônibus
+para a cidade de Posadas, a capital provincial, a um custo aproximado de US$18.
+Dependendo da empresa, a viagem leva cerca de 5 horas.</p>
+
+<p>Por favor, tente pegar o ônibus EXPRESSO ou DIRETO já que as viagens nos demais
+pode levar mais horas.</p>
+
+<p>Para mais informações: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a>,
+<a href="http://www.tigreiguazu.com.ar/">http://www.tigreiguazu.com.ar/</a> o <a href="http://www.crucerodelnorte.com.ar/">http://www.crucerodelnorte.com.ar/</a></p>
+
+<h3>Ônibus</h3>
+
+<p>Há também serviços de ônibus de longa distância que viajam para a cidade de
+Posadas a partir de São Paulo, Rio de Janeiro e Florianópolis. As empresa Crucero
+del Norte/Sur realizam esse trajeto (<a href="http://www.crucerodelnorte.com.ar/">http://www.crucerodelnorte.com.ar/</a>).</p>
+
+<p>Para mais informações: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h2>Como chegar partindo de Buenos Aires para Posadas</h2>
+
+<p>Um caso típico é chegar do exterior no Aeroporto Internacional de
+Ezeiza. Já no país, se você quiser ir para Posadas de ônibus terá
+que ir para o <strong>terminal de ônibus de Retiro</strong>; se de avião terá que ir ao
+<strong>Aeroporto Jorge Newbery (Aeroparque)</strong>. Em ambos os casos, é recomendado pegar
+um ônibus da empresa Tienda Leon (<a href="http://www.tiendaleon.com/home/">http://www.tiendaleon.com/home/</a>)
+que cobra US$16 para chegar ao Aeroparque e  US$7 para chegar a Retiro.</p>
+
+<h3>Voos</h3>
+
+<p>Os voos com destino à Posadas partem do Aeroporto Jorge Newbery (Aeroparque)
+em vários horários e custam, aproximadamente, US$146.</p>
+
+<p>Para mais informações: <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> ou <a href="http://www.decolar.com/">http://www.decolar.com/</a>.</p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/aeroparque.jpg" />
+    <br/>Aeroporto Jorge Newbery (Aeroparque)
+</div>
+
+<h3>Ônibus</h3>
+
+<p>Há muitas maneiras de viajar de Buenos Aires para Posadas, sendo o
+ponto de partida mais importante é a Estação Retiro. O custo de uma passagem com
+cama e refeição a bordo é de US$65 (ha várias alternativas em preço e serviço)
+e leva aproximadamente 12 horas.</p>
+
+<p>Para mais informações: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h3>Carro particular</h3>
+
+<p>É recomendado</p>
+
+<ul>
+<li>Dirigir pela Estrada Nacional 9 até o início da Estrada Estadual 6 e
+atravessar a ponte Zárate - Brazo Largo.</li>
+<li>Dirigir pela Estrada 14 até chegar em Misiones pela Estrada 105.</li>
+</ul>
+
+<p><strong>O trajeto possui pedágio.</strong></p>
+
+<h1>Como ir de Córdoba à Posadas</h1>
+
+<h2>Voos</h2>
+
+<p>Os voos que vão de Córdoba à Posadas tem uma conexão no
+Aeroporto Jorge Newbery da cidade de Buenos Aires (Aeroparque). O trecho
+que liga o Aeroparque com o Aeroporto de Posadas tem poucos
+passageiros, o que deixa o custo bastante elevado.
+(Aproximadamente <strong>U$S 250</strong>)</p>
+
+<p>Para mais informações consultar: <a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> ou
+<a href="http://www.decolar.com/">http://www.decolar.com/</a></p>
+
+<h2>Ônibus</h2>
+
+<p>As empresas mais importantes que fazem rota entre essas cidades são a Crucero del Norte
+(<a href="http://crucerodelnorte.com.ar">http://crucerodelnorte.com.ar</a>) e Zinger (<a href="http://expresosinger.com.ar/">http://expresosinger.com.ar/</a>).
+Ambas contam com diferentes serviços de comida a bordo em um
+trajeto que dura por volta de <strong>16 hs</strong> por um custo de <strong>U$S 115.</strong></p>
+
+<p>Para mais informações consultar: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h2>Carro Particular</h2>
+
+<p>Recomenda-se seguir a seguinte rota (há pedágios):</p>
+
+<ul>
+<li>Pegar a rota nacional 19 que une a cidade de Córdoba com Santa Fé Capital</li>
+<li>Cruzar a cidade de Paraná (Entre Rios) pelo túnel subfluvial.</li>
+<li>Dirigir-se pela rota nacional 12 até emendar com a rota provincial 127.</li>
+<li>Continuar na rota provincial 127 até emendar com a rota nacional 14.</li>
+<li>Continuar pela rota nacional 14 até chegar a Provincia de
+Misiones a emendar com a rota provincial 105.</li>
+<li>Continuar pela rota provincial 105 até a cidade de Posadas</li>
+</ul>
+
+<h2>Como chegar de Rosario a Posadas</h2>
+
+<h3>Voos</h3>
+
+<p>Por conta da distância é conveniente tomar voos diretamente do  Aeroporto
+Jorge Newbery de Buenos Aires. Para outras alternativas consultar:
+<a href="http://www.despegar.com.ar">http://www.despegar.com.ar</a> ou <a href="http://www.decolar.com/">http://www.decolar.com/</a></p>
+
+<h3>Ônibus</h3>
+
+<p><strong>U$S 92</strong> semi-leito e <strong>U$S 105</strong> leito na Río Uruguay.</p>
+
+<p>Para mais informações consultar: <a href="http://www.plataforma10.com">http://www.plataforma10.com</a></p>
+
+<h3>Carro Particular</h3>
+
+<p>Recomenda-se seguir a seguinte rota (há pedágios):</p>
+
+<ul>
+<li>Pegar a estrada Rosario-Santa Fe.</li>
+<li>Cruzar a ciudad de Paraná (Entre Rios) pelo túnel subfluvial.</li>
+<li>Dirigir-se pela rota nacional 12 até emendar com a rota provincial 127.</li>
+<li>Continuar pela rota provincial 127 até emendar com a rota nacional 14.</li>
+<li>Continuar pela rota nacional 14 até chegar a Provincia de Misiones 
+a emendar com a rota provincial 105.</li>
+<li>Continuar pela rota provincial 105 até a cidade de Posadas</li>
+</ul>
+
+<h2>Sistema de Transporte Urbano de Posadas</h2>
+
+<h3>Terminal de ônibus de longa distância -> Universidad Gastón Dachary</h3>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/posadas_terminal.jpg" />
+    <br/>Terminal de Ônibus de Posadas
+</div>
+
+<ul>
+<li><p><strong>Táxi</strong></p>
+
+<p>Pode-se pegar um táxi direto do terminal de ônibus para
+chegar na universidade por um custo aproximado de <strong>U$S 7</strong>.</p>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/taxi.jpeg" />
+    <br/>Táxi de Posadas
+</div></li>
+<li><p><strong>Ônibus Urbano - Linha 14B</strong></p>
+
+<p>Frequência: a cada X minutos</p>
+
+<p>Custo: <strong>U$S 1</strong></p>
+
+<p>Percurso: Avda. Sta. Catalina, Avda. Cte. Andresito, Avda. Lavalle, Avda.
+Chacabuco, Avda. F. de Haro, Avda. Mitre, Buenos Aires. Descer em calle
+Tucumán</p></li>
+<li><p><strong>Ônibus Urbano - Linha 15A</strong></p>
+
+<p>Frequência: cada X minutos</p>
+
+<p>Custo: <strong>U$S 1</strong></p>
+
+<p>Percurso: Avda. Sta. Catalina, Av Sta. Cruz, Avenida Lavalle, Avenida L. y
+Planes, Avenida Mitre, Ayacucho. Descer em calle Tucumán</p></li>
+</ul>
+
+<p>Mais informações sobre os percursos em:
+<a href="http://www.argentino.com.ar/posadas/recorridos+de+colectivos">http://www.argentino.com.ar/posadas/recorridos+de+colectivos</a></p>
+
+<h3>Aeroporto -> Universidad Gastón Dachary</h3>
+
+<div style="text-align:center">
+    <img src ="https://github.com/scipy-latinamerica/scipyla2015/raw/master/travel_guide/imgs/posadas_airport.jpg" />
+    <br/>Aeroporto de Posadas
+</div>
+
+<ul>
+<li><p><strong>Táxi</strong></p>
+
+<p>Pode-se tomar um táxi diretamente no aeroporto  para chegar a
+universidade por um custo aproximado de  <strong>U$S 10</strong></p></li>
+<li><p><strong>Ônibus Urbano - Linha 28</strong></p>
+
+<p>Frequência: cada 30 minutos
+Tarifa: <strong>U$S 1</strong></p>
+
+<p>Percurso: Acceso oeste hasta RN 12, Avda. San Martín hasta Avda. Lopez y
+Planes, Avda. Corrientes hasta Santa Fe. Descer em calle San Lorenzo o
+Buenos Aires</p></li>
+</ul>
+</p>
+            </div>
+        
+    </div>
+</div>
+
+            
+        </div>
+
+        
+        <div class="span3">
+            
+			<a href="http://www.accuweather.com/en/ar/posadas/5168/weather-forecast/5168" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+-->
+</a><div id="awcc1431216046420" class="aw-widget-current"  data-locationkey="5168" data-unit="c" data-language="es" data-useip="false" data-uid="awcc1431216046420"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+			
+			<div class="alert alert-error center">
+				<h3>
+					Conference Map
+				</h3>
+				<p class="center">
+						<a target="_blank" href="https://www.google.com.ar/maps/@-27.3811201,-55.9120811,13z/data=!4m2!6m1!1sz-qVL_LgL1X4.kwcNWI5-iBdI">
+					<img src="../2015/static/maps.png" />
+				</a>
+				</p>
+				<small>Airport, Bus Stations, Restaurants, Hotels, ATM, Tourism and More</small>
+			</div>
+			
+			<p class="text-center center alert alert-success">
+				<Strong>More About the Venue:</strong><br> 
+				<a href="../venue.html">The City</a>, 
+				<a href="traveling.html">Travel to Posadas</a>, 
+				<a href="accomodation.html">Accommodations</a>,
+				<a href="tours.html">Excursions</a>
+			</p>
+			
+			
+            
+                  
+                  
+                     <h3>Organizer</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://scipyla.org" title="SciPy Latin America (Organizer)"><img alt="SciPy Latin America" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8c5eaa0efe34a9eb.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://www.ugd.edu.ar/" title="Universidad Gastón Dachary (Organizer)"><img alt="Universidad Gastón Dachary" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8fb55c8f96c79ad1.7567642e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Diamond</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://www.machinalis.com/" title="Machinalis (Diamond)"><img alt="Machinalis" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8090f5aa0ca78034.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="https://www.python.org/psf/" title="Python Software Foundation (Diamond)"><img alt="Python Software Foundation" border="0" class="thumbnail" src="../fast_download/sponsor.logo.92cb3e222b54091e.7073662e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Gold</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://github.com" title="GitHub (Gold)"><img alt="GitHub" border="0" class="thumbnail" src="../fast_download/sponsor.logo.b73973ab7a86f6e3.6769746875622e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                  
+                  
+                     <h3>Bronze</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="https://www.enthought.com/" title="Enthought Scientific Computing Solutions (Bronze)"><img alt="Enthought Scientific Computing Solutions" border="0" class="thumbnail" src="../fast_download/sponsor.logo.87b2306a87e9633c.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Institutional Endorsement</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://huayra.conectarigualdad.gob.ar/" title="Huayra - GNU Linux (Institutional Endorsement)"><img alt="Huayra - GNU Linux" border="0" class="thumbnail" src="../fast_download/sponsor.logo.9a12f06e292fb0b8.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://www.conectarigualdad.gob.ar/" title="Conectar Igualdad (Institutional Endorsement)"><img alt="Conectar Igualdad" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8ae2f0c8630b75f3.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                     <h3>Specials Thanks</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="https://www.jetbrains.com/pycharm/" title="PyCharm - by JetBrains (Specials Thanks)"><img alt="PyCharm - by JetBrains" border="0" class="thumbnail" src="../fast_download/sponsor.logo.af4928405caa0fcd.6a65742e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+                  
+                  
+                  
+                     <h3>Adherent</h3>
+                     <ul class="thumbnails">
+                     
+                        <li class="span4">
+                          <a href="http://elblogdehumitos.com.ar/pages/argentina-en-python/" title="Argentina en Python (Adherent)"><img alt="Argentina en Python" border="0" class="thumbnail" src="../fast_download/sponsor.logo.a357b360f373ec85.6d616368696e616c6973322e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://www.misol.org.ar/" title="MiSoL - Misiones Software Libre (Adherent)"><img alt="MiSoL - Misiones Software Libre" border="0" class="thumbnail" src="../fast_download/sponsor.logo.81e474e18ea7b167.6a65742e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://argentina.pyladies.com/" title="pyladies Argentina (Adherent)"><img alt="pyladies Argentina" border="0" class="thumbnail" src="../fast_download/sponsor.logo.a76607472839c3a9.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://pybonacci.org/" title="Juan Luis Cano contacto@pybonacci.org (Adherent)"><img alt="Juan Luis Cano contacto@pybonacci.org" border="0" class="thumbnail" src="../fast_download/sponsor.logo.8317e820b2e4c3b5.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                        <li class="span4">
+                          <a href="http://guaraniturismo.tur.ar/" title="Guaraní Turismo (Adherent)"><img alt="Guaraní Turismo" border="0" class="thumbnail" src="../fast_download/sponsor.logo.9f86463e23ff81c2.6d616368696e616c69732e706e67.png" /></a>
+                        </li>
+                      
+                    </ul>
+                  
+                  
+              
+            
+        </div>
+        
+    </section><!--/main-->
+
+    <!-- Footer ================================================== -->
+    <div class="row">
+        <footer class="footer span12" id="footer">
+            <div class="footer-content">
+                 <!-- this is default footer -->
+                <div class="copyright pull-left">Python Scientific Conference 2015 Misiones, Argentina</div>
+                <div id="poweredBy" class="pull-right">
+                    Built using
+                    <a href="../default/about.html">web2conf</a>
+                    Powered by
+                    <a href="http://www.web2py.com/">web2py</a>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+
+  </div> <!-- /container -->
+
+  <!-- The javascript =============================================
+       (Placed at the end of the document so the pages load faster) -->
+  <script src="../2015/static/js/bootstrap.min.js"></script>
+  <script src="../2015/static/js/web2py_bootstrap.js"></script>
+  <!--[if lt IE 7 ]>
+      <script src="/2015/static/js/dd_belatedpng.js"></script>
+      <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+      <![endif]-->
+
+  
+  <script src="../2015/static/js/share.js%3Fstatic=%252F2015%252Fstatic%252Fimages"></script>
+</body>
+</html>

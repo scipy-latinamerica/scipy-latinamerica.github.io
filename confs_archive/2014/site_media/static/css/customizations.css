@@ -1,0 +1,23 @@
+/* Customizations over Simposium code
+ */
+.form-horizontal .control-label {
+    margin-right: 1em;
+}
+
+.branding-zone {
+    padding-top: 20px;
+    padding-left: 160px;
+    background-image: url('../img/logo_small.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    min-height: 110px;
+}
+
+.branding-zone h4 {
+    color: #C05800;
+}
+
+H1, H2, P, .nav, .container {
+    font-family: 'Nunito';
+
+}

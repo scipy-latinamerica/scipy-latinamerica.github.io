@@ -1,4 +1,6 @@
 Sphinx==1.2.3
 sphinx-bootstrap-theme==0.4.3
 sphinx-intl==0.9.5
+ghp-import==0.5.5
+six
 
