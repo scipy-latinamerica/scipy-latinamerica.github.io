@@ -1,0 +1,14 @@
+h1 {
+    display: none;
+}
+
+.news {
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.line-through {
+    text-decoration: line-through;
+}
