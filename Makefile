@@ -68,7 +68,7 @@ linkcheck:
 	      "or in $(BUILDDIR)/linkcheck/output.txt."
 
 publish: html
-	ghp-import -m "Generate ScipyLaTam site" -b $(GITHUB_PAGES_BRANCH) $(BUILDDIR)/html -c ${CNAME}
 	git add -A .
-	git push
+	ghp-import -m "Generate ScipyLaTam site" -b $(GITHUB_PAGES_BRANCH) $(BUILDDIR)/html -c ${CNAME}
+	git push origin gh-pages
 	git push -u --force origin $(GITHUB_PAGES_BRANCH)
