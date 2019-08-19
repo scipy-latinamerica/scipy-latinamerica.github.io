@@ -12,6 +12,7 @@
 # serve to show the default.
 
 import sphinx_bootstrap_theme
+import datetime as dt
 import sys, os
 
 from six.moves import urllib
@@ -46,8 +47,12 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
+current_year = dt.datetime.now().year
+years = ", ".join([str(y) for y in range(2014, current_year + 1)])
+
 project = data.SUBSTITUTIONS["SCIPY_LA"]
-copyright = u'2014, {}'.format(project)
+
+copyright = u'{} - {}'.format(years, project)
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

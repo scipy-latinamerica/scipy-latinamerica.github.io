@@ -43,6 +43,7 @@ html:
 	$(SPHINXBUILD) -b html $(SPHINXOPTS_ES) $(BUILDDIR)/html/es
 	$(SPHINXBUILD) -b html $(SPHINXOPTS_PT) $(BUILDDIR)/html/pt
 	cp source/index.html $(BUILDDIR)/html
+	touch $(BUILDDIR)/html/.nojekyll
 	cp README.md $(BUILDDIR)/html
 	mkdir -p $(BUILDDIR)/html/conf && cp -R confs_archive/* $(BUILDDIR)/html/conf
 	@echo
