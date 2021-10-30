@@ -5,6 +5,7 @@ Conferencias
 Conferencias
 ------------
 
+- `SciPy Latin America 2021 - [Online] <https://www.scipy.lat/conf/2021/>`_
 - `SciPy Latin America 2019 - Colombia <https://www.scipy.lat/conf/2019/>`_
 - `SciPy Latin America 2018 - Curitiba, Brazil <https://www.scipy.lat/conf/2018/>`_
 - `SciPy Latin America 2017 - Habana, Cuba <https://www.scipy.lat/conf/2017/>`_ **CANCELED**
